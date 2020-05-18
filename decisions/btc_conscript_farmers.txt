@@ -1,0 +1,272 @@
+country_decisions = {
+
+	btc_conscript_farmers_decision = {
+		potential = {
+			has_idea = btc_conscript_farmers_idea
+			OR = {
+				had_country_flag = {
+					flag = btc_conscripted_farmers
+					days = 3650
+				}
+				NOT ={ has_country_flag = btc_conscripted_farmers }
+			}
+		}
+		allow = {
+			is_at_war = yes
+		}
+		effect = {
+			add_yearly_manpower = 1
+			set_country_flag = btc_conscripted_farmers
+			custom_tooltip = btc_conscript_farmers_tooltip
+			hidden_effect = {
+				random_owned_province = { #RandProv 1
+					limit = {
+						OR = {
+							trade_goods = grain
+							trade_goods = rice
+							trade_goods = potatoes
+							trade_goods = maize
+							trade_goods = millet
+							trade_goods = fruit
+							trade_goods = apiculture
+							trade_goods = olives
+							trade_goods = dates
+							trade_goods = amaranth
+							trade_goods = legumes
+							trade_goods = teff
+							trade_goods = livestock
+						}
+						NOT = { has_province_modifier = btc_recently_conscripted_mod }
+					}
+					add_province_modifier = {
+						name = btc_recently_conscripted_mod
+						duration = 3650
+					}
+				}
+				random_owned_province = { #RandProv 2
+					limit = {
+						OR = {
+							trade_goods = grain
+							trade_goods = rice
+							trade_goods = potatoes
+							trade_goods = maize
+							trade_goods = millet
+							trade_goods = fruit
+							trade_goods = apiculture
+							trade_goods = olives
+							trade_goods = dates
+							trade_goods = amaranth
+							trade_goods = legumes
+							trade_goods = teff
+							trade_goods = livestock
+						}
+						NOT = { has_province_modifier = btc_recently_conscripted_mod }
+					}
+					add_province_modifier = {
+						name = btc_recently_conscripted_mod
+						duration = 3650
+					}
+				}
+				random_owned_province = { #RandProv 3
+					limit = {
+						OR = {
+							trade_goods = grain
+							trade_goods = rice
+							trade_goods = potatoes
+							trade_goods = maize
+							trade_goods = millet
+							trade_goods = fruit
+							trade_goods = apiculture
+							trade_goods = olives
+							trade_goods = dates
+							trade_goods = amaranth
+							trade_goods = legumes
+							trade_goods = teff
+							trade_goods = livestock
+						}
+						NOT = { has_province_modifier = btc_recently_conscripted_mod }
+					}
+					add_province_modifier = {
+						name = btc_recently_conscripted_mod
+						duration = 3650
+					}
+				}
+				random_owned_province = { #RandProv 4
+					limit = {
+						OR = {
+							trade_goods = grain
+							trade_goods = rice
+							trade_goods = potatoes
+							trade_goods = maize
+							trade_goods = millet
+							trade_goods = fruit
+							trade_goods = apiculture
+							trade_goods = olives
+							trade_goods = dates
+							trade_goods = amaranth
+							trade_goods = legumes
+							trade_goods = teff
+							trade_goods = livestock
+						}
+						NOT = { has_province_modifier = btc_recently_conscripted_mod }
+					}
+					add_province_modifier = {
+						name = btc_recently_conscripted_mod
+						duration = 3650
+					}
+				}
+				random_owned_province = { #RandProv 5
+					limit = {
+						OR = {
+							trade_goods = grain
+							trade_goods = rice
+							trade_goods = potatoes
+							trade_goods = maize
+							trade_goods = millet
+							trade_goods = fruit
+							trade_goods = apiculture
+							trade_goods = olives
+							trade_goods = dates
+							trade_goods = amaranth
+							trade_goods = legumes
+							trade_goods = teff
+							trade_goods = livestock
+						}
+						NOT = { has_province_modifier = btc_recently_conscripted_mod }
+					}
+					add_province_modifier = {
+						name = btc_recently_conscripted_mod
+						duration = 3650
+					}
+				}
+				random_owned_province = { #RandProv 6
+					limit = {
+						OR = {
+							trade_goods = grain
+							trade_goods = rice
+							trade_goods = potatoes
+							trade_goods = maize
+							trade_goods = millet
+							trade_goods = fruit
+							trade_goods = apiculture
+							trade_goods = olives
+							trade_goods = dates
+							trade_goods = amaranth
+							trade_goods = legumes
+							trade_goods = teff
+							trade_goods = livestock
+						}
+						NOT = { has_province_modifier = btc_recently_conscripted_mod }
+					}
+					add_province_modifier = {
+						name = btc_recently_conscripted_mod
+						duration = 3650
+					}
+				}
+				random_owned_province = { #RandProv 7
+					limit = {
+						OR = {
+							trade_goods = grain
+							trade_goods = rice
+							trade_goods = potatoes
+							trade_goods = maize
+							trade_goods = millet
+							trade_goods = fruit
+							trade_goods = apiculture
+							trade_goods = olives
+							trade_goods = dates
+							trade_goods = amaranth
+							trade_goods = legumes
+							trade_goods = teff
+							trade_goods = livestock
+						}
+						NOT = { has_province_modifier = btc_recently_conscripted_mod }
+					}
+					add_province_modifier = {
+						name = btc_recently_conscripted_mod
+						duration = 3650
+					}
+				}
+				random_owned_province = { #RandProv 8
+					limit = {
+						OR = {
+							trade_goods = grain
+							trade_goods = rice
+							trade_goods = potatoes
+							trade_goods = maize
+							trade_goods = millet
+							trade_goods = fruit
+							trade_goods = apiculture
+							trade_goods = olives
+							trade_goods = dates
+							trade_goods = amaranth
+							trade_goods = legumes
+							trade_goods = teff
+							trade_goods = livestock
+						}
+						NOT = { has_province_modifier = btc_recently_conscripted_mod }
+					}
+					add_province_modifier = {
+						name = btc_recently_conscripted_mod
+						duration = 3650
+					}
+				}
+				random_owned_province = { #RandProv 9
+					limit = {
+						OR = {
+							trade_goods = grain
+							trade_goods = rice
+							trade_goods = potatoes
+							trade_goods = maize
+							trade_goods = millet
+							trade_goods = fruit
+							trade_goods = apiculture
+							trade_goods = olives
+							trade_goods = dates
+							trade_goods = amaranth
+							trade_goods = legumes
+							trade_goods = teff
+							trade_goods = livestock
+						}
+						NOT = { has_province_modifier = btc_recently_conscripted_mod }
+					}
+					add_province_modifier = {
+						name = btc_recently_conscripted_mod
+						duration = 3650
+					}
+				}
+				random_owned_province = { #RandProv 10
+					limit = {
+						OR = {
+							trade_goods = grain
+							trade_goods = rice
+							trade_goods = potatoes
+							trade_goods = maize
+							trade_goods = millet
+							trade_goods = fruit
+							trade_goods = apiculture
+							trade_goods = olives
+							trade_goods = dates
+							trade_goods = amaranth
+							trade_goods = legumes
+							trade_goods = teff
+							trade_goods = livestock
+						}
+						NOT = { has_province_modifier = btc_recently_conscripted_mod }
+					}
+					add_province_modifier = {
+						name = btc_recently_conscripted_mod
+						duration = 3650
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				manpower_percentage = 0.65 #Won't do if manpower is already high
+			}
+		}
+	}
+}

@@ -1,0 +1,53 @@
+btc_mercantilist_wargoal = {
+	type = naval_superiority
+
+	attacker = {
+		badboy_factor = 0.8
+		prestige_factor = 1.5
+		peace_cost_factor = 0.8
+
+		allowed_provinces = {
+			OR = {
+				province_has_center_of_trade_of_level = 3
+				province_has_center_of_trade_of_level = 2
+				province_has_center_of_trade_of_level = 1
+			}
+		}
+		
+		peace_options = {
+			po_demand_provinces
+			po_revoke_cores
+			po_gold
+			po_concede_defeat
+			po_trade_power
+			po_steer_trade
+		}
+		
+	}
+	
+	defender = {
+		badboy_factor = 0.75
+		prestige_factor = 2
+		peace_cost_factor = 0.75
+
+		allowed_provinces = {
+			OR = {
+				province_has_center_of_trade_of_level = 3
+				province_has_center_of_trade_of_level = 2
+				province_has_center_of_trade_of_level = 1
+			}
+		}
+		
+		peace_options = {
+			po_demand_provinces
+			po_revoke_cores
+			po_gold
+			po_concede_defeat
+			po_trade_power
+			po_steer_trade
+		}
+		
+	}
+	
+	war_name = MERCANTILE_WAR_NAME
+}

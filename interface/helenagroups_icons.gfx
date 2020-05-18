@@ -1,0 +1,44 @@
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_idea_btc_infrastructure_ideas"
+		texturefile = "gfx//interface//ideas//idea_btc_infrastructure_ideas.dds"
+		noOfFrames = 1
+		
+		effectFile = "gfx/FX/buttonstate_linear.lua"
+	}
+	spriteType = {
+		name = "GFX_idea_btc_irregular_army_ideas"
+		texturefile = "gfx//interface//ideas//idea_btc_irregular_army_ideas.dds"
+		noOfFrames = 1
+		
+		effectFile = "gfx/FX/buttonstate_linear.lua"
+	}
+	spriteType = {
+		name = "GFX_idea_btc_logistic_ideas"
+		texturefile = "gfx//interface//ideas//idea_btc_logistic_ideas.dds"
+		noOfFrames = 1
+		
+		effectFile = "gfx/FX/buttonstate_linear.lua"
+	}
+	spriteType = {
+		name = "GFX_idea_btc_mercantilist_ideas"
+		texturefile = "gfx//interface//ideas//idea_btc_mercantilist_ideas.dds"
+		noOfFrames = 1
+		
+		effectFile = "gfx/FX/buttonstate_linear.lua"
+	}
+	spriteType = {
+		name = "GFX_idea_btc_thalassocracy_ideas"
+		texturefile = "gfx//interface//ideas//idea_btc_thalassocracy_ideas.dds"
+		noOfFrames = 1
+		
+		effectFile = "gfx/FX/buttonstate_linear.lua"
+	}
+	spriteType = {
+		name = "GFX_idea_btc_inland_warfare_ideas"
+		texturefile = "gfx//interface//ideas//idea_btc_inland_warfare_ideas.dds"
+		noOfFrames = 1
+		
+		effectFile = "gfx/FX/buttonstate_linear.lua"
+	}
+}

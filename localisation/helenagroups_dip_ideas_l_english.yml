@@ -1,0 +1,25 @@
+﻿l_english:
+
+ #Mercantilist Ideas
+ btc_mercantilist_ideas: "Mercantilist Trade Ideas"
+ btc_mercantilist_ideas_bonus: "Full Mercantilist Trade Ideas"
+ btc_protected_convoys_idea: "Trade Convoys"
+ btc_protected_convoys_idea_desc: "Merchants and their routes are often the target of bandits, military skirmishes and similar, for they usually carry many wealth, however not only the roads pose a danger for our merchants. The sea is similarly filled with pirates, privateers and other despicable individuals, because of this we must issue a series of convoys for our maritime trade routes, so our merchants can safely traverse the waters.\n"
+ btc_first_come_idea: "Firt Come, First Served"
+ btc_first_come_idea_desc: "Some countries prefer to leave their merchants do whatever so long as they contribute to the wealth of their cities. This is a weak mentality. Our merchants are ruthless, and will be always present wherever our country is able to extend its reach to always make the best deals and impose our nation's interests.\n"
+ btc_trade_cities_idea: "Trade Cities"
+ btc_trade_cities_idea_desc: "Just our presence won't be enough to convince others that our ports are the best ones for the flow of their goods. If we want to make our tariffs and conditions worth enough, we must invest in our ports by developing them into whole trade cities where ships and citizens alike are always busy making some deal.\n"
+ btc_trade_exclaves_idea: "Stato da Màr"
+ btc_trade_exclaves_idea_desc: "Our mainland possessions aren't enough if we want to impose our economical supremacy over the region. Enemies loom at our doorsteps, enemies who threaten our trade routes and merchants. We must secure a monopoly in our trade routes and doing so requires having absolute control of the most important ports around us.\n\n§YUnlocks feature§!:\n§GSea Hegemony:§! Gain access to the §YMercantile War§! casus belli, an improved trade war that allows the conquest of Centers of Trade at a reduced cost.\nCan be used against:\n- Any nation embargoing us\n- Any Merchant Republic within nodes where we are active\n- The nation with most trade power in nodes where we hold at least §Y10%§! of trade power\nAlso gain the following permanent, nation-wide modifiers:"
+ btc_trade_families_idea: "Merchant Families"
+ btc_trade_families_idea_desc: "Not all power lies within nobility titles. Our nation's focus on trade has bolstered the burgher class status, facilitating the creation of several merchant families; people who have accumulated a fair amount of wealth and through it project influence upon the cities they operate in. By giving some of these families trading and traveling privileges, we can make many of the most influential individuals within our realm to be indebted of favours towards us. This way, in the future, we might use them to help extend our trading monopolies.\n\n§YBurghers§! monthly loyalty: §G+15.00%§!"
+ 
+ #Thalassocracy ideas
+ btc_thalassocracy_ideas: "Thalassocracy Ideas"
+ btc_thalassocracy_ideas_bonus: "Full Thalassocracy Ideas"
+ 
+ #Modifiers and misc
+ cb_btc_improved_trade_war: "Mercantile War"
+ cb_btc_improved_trade_war_desc: "We can annex new exclaves."
+ MERCANTILE_WAR_NAME:0 "$ORDER$$FIRST$-$SECOND$ Mercantile War"
+ EST_VAL_MERCANTILIST_IDEAS:0 "Merchant Families: $VAL|Y$"

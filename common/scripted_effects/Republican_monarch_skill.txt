@@ -1,0 +1,116 @@
+# implemented as event enstead of scripted triggers
+# For now: support up to 4
+LVD_add_republican_mil_power = {
+	if = {
+		limit = {
+			has_global_modifier_value = {
+				which = monarch_military_power
+				value = 1
+			}
+		}
+		change_mil = 1
+	}
+	if = {
+		limit = {
+			has_global_modifier_value = {
+				which = monarch_military_power
+				value = 2
+			}
+		}
+		change_mil = 1
+	}
+	if = {
+		limit = {
+			has_global_modifier_value = {
+				which = monarch_military_power
+				value = 3
+			}
+		}
+		change_mil = 1
+	}
+	if = {
+		limit = {
+			has_global_modifier_value = {
+				which = monarch_military_power
+				value = 4
+			}
+		}
+		change_mil = 1
+	}
+}
+LVD_add_republican_adm_power = {
+	if = {
+		limit = {
+			has_global_modifier_value = {
+				which = monarch_admin_power
+				value = 1
+			}
+		}
+		change_adm = 1
+	}
+	if = {
+		limit = {
+			has_global_modifier_value = {
+				which = monarch_admin_power
+				value = 2
+			}
+		}
+		change_adm = 1
+	}
+	if = {
+		limit = {
+			has_global_modifier_value = {
+				which = monarch_admin_power
+				value = 3
+			}
+		}
+		change_adm = 1
+	}
+	if = {
+		limit = {
+			has_global_modifier_value = {
+				which = monarch_admin_power
+				value = 4
+			}
+		}
+		change_adm = 1
+	}
+}
+LVD_add_republican_dip_power = {
+	if = {
+		limit = {
+			has_global_modifier_value = {
+				which = monarch_diplomatic_power
+				value = 1
+			}
+		}
+		change_dip = 1
+	}
+	if = {
+		limit = {
+			has_global_modifier_value = {
+				which = monarch_diplomatic_power
+				value = 2
+			}
+		}
+		change_dip = 1
+	}
+	if = {
+		limit = {
+			has_global_modifier_value = {
+				which = monarch_diplomatic_power
+				value = 3
+			}
+		}
+		change_dip = 1
+	}
+	if = {
+		limit = {
+			has_global_modifier_value = {
+				which = monarch_diplomatic_power
+				value = 4
+			}
+		}
+		change_dip = 1
+	}
+}

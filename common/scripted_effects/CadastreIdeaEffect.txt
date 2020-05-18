@@ -1,0 +1,26 @@
+# Scripted to not have this 3x in the on_actions; may also be usefull for related events?
+# Scope: province !!!
+cadastre_idea_effect = {
+	set_variable = {
+		which = infrastructure_money
+		value = 0
+	}
+	export_to_variable = {
+		which = infrastructure_money
+		value = development
+		#### who = ROOT
+	}
+	while = {
+		limit = {
+			check_variable = {
+				which = infrastructure_money
+				value = 1
+			}
+		}
+		owner = { add_treasury = 1 }
+		change_variable = {
+			which = infrastructure_money
+			value = -1
+		}
+	}
+}

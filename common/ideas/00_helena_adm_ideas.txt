@@ -1,0 +1,357 @@
+# Do not change tags in here without changing every other reference to them.
+# Do not change tags in here without changing every other reference to them.
+# If adding new groups or ideas, make sure they are unique.
+
+# ai_will do is only used to determine which idea group is picked if AI_USES_HISTORICAL_IDEA_GROUPS define is 0, OR start is custom/random
+# ai never picks an idea that resolves to ai_will_do = 0, even if AI_USES_HISTORICAL_IDEA_GROUPS = 1
+# ROOT = country picking the idea
+# groups set to colonial=yes will be higher prioritized by the AI when spending power
+
+expansion_ideas = { #Tellurocracy
+	category = ADM
+	important = yes
+
+	bonus = {
+ 		max_states = 5
+	}
+
+	adaptability = {
+		core_creation = -0.2
+	}
+	additional_merchants = {
+		merchants = 1
+	}
+	btc_expansion_idea_3 = {
+		
+	}
+	btc_expansion_idea_4 = {
+		
+	}
+	additional_diplomats = {
+		diplomatic_upkeep = 1
+	}
+	btc_expansion_idea_6 = {
+		
+	}
+	btc_expansion_idea_7 = {
+		
+	}
+	
+	ai_will_do = {
+		factor = 0.48
+		modifier = {
+			factor = 10
+			OR = {
+				has_idea_group = exploration_ideas
+				is_colonial_nation = yes
+			}
+		}
+		modifier = {
+			factor = 5
+			OR = {
+				tag = CAS
+				tag = POR
+				tag = SPA
+			}
+		}
+		modifier = {
+			factor = 10
+			NOT = { has_dlc = "Third Rome" } # Has siberian frontier instead
+			tag = RUS
+			num_of_cities = 20
+			any_owned_province = {
+				has_empty_adjacent_province = yes
+			}
+		}
+		modifier = {
+			factor = 0
+			NOT = { has_idea_group = exploration_ideas }
+			NOT = { is_colonial_nation = yes }
+			NOT = {
+				any_owned_province = {
+					has_empty_adjacent_province = yes
+				}
+			}
+		}
+		modifier = {
+			factor = 0.1
+			NOT = {
+				technology_group = western
+				technology_group = eastern
+				technology_group = muslim
+			}
+		}
+	}
+}
+
+administrative_ideas = {
+	category = ADM
+
+	bonus = {
+		advisor_cost = 0.05
+	}
+
+	organised_mercenary_payment = {
+		mercenary_cost = -0.35
+	}
+	administrative_efficiency_idea = {
+		advisor_pool = 1
+	}
+	regimental_system = {
+		land_maintenance_modifier = -0.1
+	}
+	bookkeeping = {
+		interest = -0.5
+	}
+	btc_adm_streamlined_bureaucracy_idea = {
+		state_maintenance_modifier = -0.2
+	}
+	civil_servants = {
+		reform_progress_growth = 0.15
+	}
+	btc_adm_effective_territories_idea = {
+		max_states = 8
+	}
+
+	ai_will_do = {
+		factor = 0.96
+		modifier = {
+			factor = 2
+			has_reform = steppe_horde
+		}
+	}
+}
+
+economic_ideas = { #Bureaucratic ideas
+	category = ADM
+
+	bonus = {
+		state_maintenance_modifier = 0.1
+	}
+
+	bureaucracy = {
+		global_tax_modifier = 0.10
+	}
+	btc_economic_idea_2 = {
+		
+	}
+	national_bank = {
+		inflation_reduction = 0.1
+	}
+	debt_and_loans = {
+		interest = -0.5
+	}
+	centralization = {
+		global_autonomy = -0.05
+	}
+	btc_bureaucracy_corruption = {
+		yearly_corruption = -0.05
+	}
+	btc_public_administration_idea = {
+		free_adm_policy = 1
+		#Allows powerful edicts
+	}
+
+	ai_will_do = {
+		factor = 0.85
+		modifier = {
+			factor = 1.5
+			inflation = 5
+		}
+		modifier = {
+			factor = 1.5
+			inflation = 10
+		}
+		modifier = {
+			factor = 2
+			has_reform = steppe_horde
+		}
+		modifier = {
+			factor = 1.3
+			num_of_cities = 20
+		}
+		modifier = {
+			factor = 1.3
+			num_of_cities = 50
+		}
+	}
+}
+
+btc_infrastructure_ideas = {
+	category = ADM
+
+	bonus = {
+		defensiveness = -0.1
+	}
+
+	infr_idea_1 = { #State investments
+		development_cost = -0.05
+		#Less effect of development cost when developing
+	}
+	organised_construction = {
+		build_cost = -0.1
+	}
+	infr_idea_3 = {
+		
+	}
+	infr_idea_4 = { #Urban planning
+		allowed_num_of_buildings = 1
+	}
+	infr_idea_5 = { #Cadastre
+		development_cost = -0.05
+		#Gain ducats upon developing
+	}
+	infr_idea_6 = { #Country roads
+		movement_speed = 0.1
+		#Extra production efficiency in agricultural provinces
+	}
+	infr_idea_7 = { #Public hospitals
+		promote_culture_cost = -0.25
+		#Improved options for ill/disease related events 
+	}
+
+	ai_will_do = {
+		factor = 0.3
+		modifier = {
+			factor = 2
+			has_reform = steppe_horde
+		}
+		modifier = {
+			factor = 2
+			num_of_cities = 20
+		}
+		modifier = {
+			factor = 2
+			num_of_cities = 50
+		}
+	}
+}
+
+innovativeness_ideas = {
+	category = ADM
+
+	bonus = {
+		advisor_cost = -0.25
+	}
+
+	patron_of_art  = {
+		prestige_decay = -0.01
+	}
+	empiricism = {
+		innovativeness_gain = 0.5
+	}
+	scientific_revolution = {
+		technology_cost = -0.1
+		embracement_cost = -0.1
+	}
+	dynamic_court = {
+		advisor_pool = 1
+	}
+	print_culture = {
+		global_institution_spread = 0.25
+	}
+	optimism = {
+		war_exhaustion = -0.05
+	}
+	formalized_officer_corps = {
+		free_leader_pool = 1
+	}
+
+	ai_will_do = {
+		factor = 0.3
+		modifier = {
+			factor = 2
+			has_reform = steppe_horde
+		}
+		modifier = {
+			factor = 2
+			num_of_cities = 20
+		}
+		modifier = {
+			factor = 2
+			num_of_cities = 50
+		}
+	}
+}
+
+
+religious_ideas = {
+	category = ADM
+
+	bonus = {
+		culture_conversion_cost = -0.25
+	}
+
+	missionary_schools = {
+		missionaries = 1
+	}
+	church_attendance_duty = {
+		stability_cost_modifier = -0.25
+	}
+	divine_supremacy = {
+		global_missionary_strength = 0.03
+	}
+	devoutness = {
+		tolerance_own = 2
+		papal_influence = 2
+		devotion = 0.5
+		monthly_fervor_increase = 0.25
+		church_power_modifier = 0.1
+	}
+	religious_tradition = {
+		prestige = 1
+	}
+	inquisition = {
+		missionary_maintenance_cost = -0.5
+	}
+	deus_vult = {
+		cb_on_religious_enemies = yes
+	}
+
+	ai_will_do = {
+		factor = 0.9
+		modifier = {
+			factor = 0
+			has_idea_group = humanist_ideas
+		}
+	}
+}
+
+humanist_ideas = {
+	category = ADM
+
+	bonus = {
+		global_missionary_strength = -0.02
+	}
+
+	ecumenism = {
+		tolerance_heretic = 2
+	}
+	local_traditions = {
+		global_unrest = -2
+	}
+	indirect_rule = {
+		years_of_nationalism = -10
+	}
+	cultural_ties = {
+		num_accepted_cultures = 2
+	}
+	benevolence = {
+		improve_relation_modifier = 0.3
+	}
+	humanist_tolerance = {
+		tolerance_heathen = 2
+		yearly_harmony = 0.25  # Used if religion uses harmony (confucianism)
+	}
+	btc_humanist_1 = { #Pragmatism
+		idea_cost = -0.1
+	}
+
+	ai_will_do = {
+		factor = 0.9
+		modifier = {
+			factor = 0
+			has_idea_group = religious_ideas
+		}
+	}
+}

@@ -1,0 +1,133 @@
+# Ugliest code you've ever seen
+
+btc_remove_any_lower_dev_from_dev = {
+	remove_province_modifier =  btc_reduced_cost_from_dev_10
+	remove_province_modifier =  btc_reduced_cost_from_dev_11
+	remove_province_modifier =  btc_reduced_cost_from_dev_12
+	remove_province_modifier =  btc_reduced_cost_from_dev_13
+	remove_province_modifier =  btc_reduced_cost_from_dev_14
+	remove_province_modifier =  btc_reduced_cost_from_dev_15
+	remove_province_modifier =  btc_reduced_cost_from_dev_16
+	remove_province_modifier =  btc_reduced_cost_from_dev_17
+	remove_province_modifier =  btc_reduced_cost_from_dev_18
+	remove_province_modifier =  btc_reduced_cost_from_dev_19
+	remove_province_modifier =  btc_reduced_cost_from_dev_20
+	remove_province_modifier =  btc_reduced_cost_from_dev_21
+	remove_province_modifier =  btc_reduced_cost_from_dev_22
+	remove_province_modifier =  btc_reduced_cost_from_dev_23
+	remove_province_modifier =  btc_reduced_cost_from_dev_24
+	remove_province_modifier =  btc_reduced_cost_from_dev_25
+	remove_province_modifier =  btc_reduced_cost_from_dev_26
+	remove_province_modifier =  btc_reduced_cost_from_dev_27
+	remove_province_modifier =  btc_reduced_cost_from_dev_28
+	remove_province_modifier =  btc_reduced_cost_from_dev_29
+	remove_province_modifier =  btc_reduced_cost_from_dev_30
+	remove_province_modifier =  btc_reduced_cost_from_dev_31
+	remove_province_modifier =  btc_reduced_cost_from_dev_32
+	remove_province_modifier =  btc_reduced_cost_from_dev_33
+	remove_province_modifier =  btc_reduced_cost_from_dev_34
+	remove_province_modifier =  btc_reduced_cost_from_dev_35
+	remove_province_modifier =  btc_reduced_cost_from_dev_36
+	remove_province_modifier =  btc_reduced_cost_from_dev_37
+	remove_province_modifier =  btc_reduced_cost_from_dev_38
+	remove_province_modifier =  btc_reduced_cost_from_dev_39
+	remove_province_modifier =  btc_reduced_cost_from_dev_40
+	remove_province_modifier =  btc_reduced_cost_from_dev_41
+	remove_province_modifier =  btc_reduced_cost_from_dev_42
+	remove_province_modifier =  btc_reduced_cost_from_dev_43
+	remove_province_modifier =  btc_reduced_cost_from_dev_44
+	remove_province_modifier =  btc_reduced_cost_from_dev_45
+	remove_province_modifier =  btc_reduced_cost_from_dev_46
+	remove_province_modifier =  btc_reduced_cost_from_dev_47
+	remove_province_modifier =  btc_reduced_cost_from_dev_48
+	remove_province_modifier =  btc_reduced_cost_from_dev_49
+	remove_province_modifier =  btc_reduced_cost_from_dev_50
+	remove_province_modifier =  btc_reduced_cost_from_dev_51
+	remove_province_modifier =  btc_reduced_cost_from_dev_52
+	remove_province_modifier =  btc_reduced_cost_from_dev_53
+	remove_province_modifier =  btc_reduced_cost_from_dev_54
+	remove_province_modifier =  btc_reduced_cost_from_dev_55
+	remove_province_modifier =  btc_reduced_cost_from_dev_56
+	remove_province_modifier =  btc_reduced_cost_from_dev_57
+	remove_province_modifier =  btc_reduced_cost_from_dev_58
+	remove_province_modifier =  btc_reduced_cost_from_dev_59
+	remove_province_modifier =  btc_reduced_cost_from_dev_60
+	remove_province_modifier =  btc_reduced_cost_from_dev_61
+	remove_province_modifier =  btc_reduced_cost_from_dev_62
+	remove_province_modifier =  btc_reduced_cost_from_dev_63
+	remove_province_modifier =  btc_reduced_cost_from_dev_64
+	remove_province_modifier =  btc_reduced_cost_from_dev_65
+	remove_province_modifier =  btc_reduced_cost_from_dev_66
+	remove_province_modifier =  btc_reduced_cost_from_dev_67
+	remove_province_modifier =  btc_reduced_cost_from_dev_68
+	remove_province_modifier =  btc_reduced_cost_from_dev_69
+}
+btc_assign_lower_dev_from_dev = {
+	trigger_switch = {
+		on_trigger = development # Province Scope
+		# WARNING: I may have to specify the province scope here
+		# Takes the first number has gives "is at least", so order is inversed
+		69= { btc_remove_any_lower_dev_from_dev = yes add_province_modifier = { name = btc_reduced_cost_from_dev_69 duration = -1 hidden = yes } }
+		68= { btc_remove_any_lower_dev_from_dev = yes add_province_modifier = { name = btc_reduced_cost_from_dev_68 duration = -1 hidden = yes } }
+		67= { btc_remove_any_lower_dev_from_dev = yes add_province_modifier = { name = btc_reduced_cost_from_dev_67 duration = -1 hidden = yes } }
+		66= { btc_remove_any_lower_dev_from_dev = yes add_province_modifier = { name = btc_reduced_cost_from_dev_66 duration = -1 hidden = yes } }
+		65= { btc_remove_any_lower_dev_from_dev = yes add_province_modifier = { name = btc_reduced_cost_from_dev_65 duration = -1 hidden = yes } }
+		64= { btc_remove_any_lower_dev_from_dev = yes add_province_modifier = { name = btc_reduced_cost_from_dev_64 duration = -1 hidden = yes } }
+		63= { btc_remove_any_lower_dev_from_dev = yes add_province_modifier = { name = btc_reduced_cost_from_dev_63 duration = -1 hidden = yes } }
+		62= { btc_remove_any_lower_dev_from_dev = yes add_province_modifier = { name = btc_reduced_cost_from_dev_62 duration = -1 hidden = yes } }
+		61= { btc_remove_any_lower_dev_from_dev = yes add_province_modifier = { name = btc_reduced_cost_from_dev_61 duration = -1 hidden = yes } }
+		60= { btc_remove_any_lower_dev_from_dev = yes add_province_modifier = { name = btc_reduced_cost_from_dev_60 duration = -1 hidden = yes } }
+		59= { btc_remove_any_lower_dev_from_dev = yes add_province_modifier = { name = btc_reduced_cost_from_dev_59 duration = -1 hidden = yes } }
+		58= { btc_remove_any_lower_dev_from_dev = yes add_province_modifier = { name = btc_reduced_cost_from_dev_58 duration = -1 hidden = yes } }
+		57= { btc_remove_any_lower_dev_from_dev = yes add_province_modifier = { name = btc_reduced_cost_from_dev_57 duration = -1 hidden = yes } }
+		56= { btc_remove_any_lower_dev_from_dev = yes add_province_modifier = { name = btc_reduced_cost_from_dev_56 duration = -1 hidden = yes } }
+		55= { btc_remove_any_lower_dev_from_dev = yes add_province_modifier = { name = btc_reduced_cost_from_dev_55 duration = -1 hidden = yes } }
+		54= { btc_remove_any_lower_dev_from_dev = yes add_province_modifier = { name = btc_reduced_cost_from_dev_54 duration = -1 hidden = yes } }
+		53= { btc_remove_any_lower_dev_from_dev = yes add_province_modifier = { name = btc_reduced_cost_from_dev_53 duration = -1 hidden = yes } }
+		52= { btc_remove_any_lower_dev_from_dev = yes add_province_modifier = { name = btc_reduced_cost_from_dev_52 duration = -1 hidden = yes } }
+		51= { btc_remove_any_lower_dev_from_dev = yes add_province_modifier = { name = btc_reduced_cost_from_dev_51 duration = -1 hidden = yes } }
+		50= { btc_remove_any_lower_dev_from_dev = yes add_province_modifier = { name = btc_reduced_cost_from_dev_50 duration = -1 hidden = yes } }
+		49= { btc_remove_any_lower_dev_from_dev = yes add_province_modifier = { name = btc_reduced_cost_from_dev_49 duration = -1 hidden = yes } }
+		48= { btc_remove_any_lower_dev_from_dev = yes add_province_modifier = { name = btc_reduced_cost_from_dev_48 duration = -1 hidden = yes } }
+		47= { btc_remove_any_lower_dev_from_dev = yes add_province_modifier = { name = btc_reduced_cost_from_dev_47 duration = -1 hidden = yes } }
+		46= { btc_remove_any_lower_dev_from_dev = yes add_province_modifier = { name = btc_reduced_cost_from_dev_46 duration = -1 hidden = yes } }
+		45= { btc_remove_any_lower_dev_from_dev = yes add_province_modifier = { name = btc_reduced_cost_from_dev_45 duration = -1 hidden = yes } }
+		44= { btc_remove_any_lower_dev_from_dev = yes add_province_modifier = { name = btc_reduced_cost_from_dev_44 duration = -1 hidden = yes } }
+		43= { btc_remove_any_lower_dev_from_dev = yes add_province_modifier = { name = btc_reduced_cost_from_dev_43 duration = -1 hidden = yes } }
+		42= { btc_remove_any_lower_dev_from_dev = yes add_province_modifier = { name = btc_reduced_cost_from_dev_42 duration = -1 hidden = yes } }
+		41= { btc_remove_any_lower_dev_from_dev = yes add_province_modifier = { name = btc_reduced_cost_from_dev_41 duration = -1 hidden = yes } }
+		40= { btc_remove_any_lower_dev_from_dev = yes add_province_modifier = { name = btc_reduced_cost_from_dev_40 duration = -1 hidden = yes } }
+		39= { btc_remove_any_lower_dev_from_dev = yes add_province_modifier = { name = btc_reduced_cost_from_dev_39 duration = -1 hidden = yes } }
+		38= { btc_remove_any_lower_dev_from_dev = yes add_province_modifier = { name = btc_reduced_cost_from_dev_38 duration = -1 hidden = yes } }
+		37= { btc_remove_any_lower_dev_from_dev = yes add_province_modifier = { name = btc_reduced_cost_from_dev_37 duration = -1 hidden = yes } }
+		36= { btc_remove_any_lower_dev_from_dev = yes add_province_modifier = { name = btc_reduced_cost_from_dev_36 duration = -1 hidden = yes } }
+		35= { btc_remove_any_lower_dev_from_dev = yes add_province_modifier = { name = btc_reduced_cost_from_dev_35 duration = -1 hidden = yes } }
+		34= { btc_remove_any_lower_dev_from_dev = yes add_province_modifier = { name = btc_reduced_cost_from_dev_34 duration = -1 hidden = yes } }
+		33= { btc_remove_any_lower_dev_from_dev = yes add_province_modifier = { name = btc_reduced_cost_from_dev_33 duration = -1 hidden = yes } }
+		32= { btc_remove_any_lower_dev_from_dev = yes add_province_modifier = { name = btc_reduced_cost_from_dev_32 duration = -1 hidden = yes } }
+		31= { btc_remove_any_lower_dev_from_dev = yes add_province_modifier = { name = btc_reduced_cost_from_dev_31 duration = -1 hidden = yes } }
+		30= { btc_remove_any_lower_dev_from_dev = yes add_province_modifier = { name = btc_reduced_cost_from_dev_30 duration = -1 hidden = yes } }
+		29= { btc_remove_any_lower_dev_from_dev = yes add_province_modifier = { name = btc_reduced_cost_from_dev_29 duration = -1 hidden = yes } }
+		28= { btc_remove_any_lower_dev_from_dev = yes add_province_modifier = { name = btc_reduced_cost_from_dev_28 duration = -1 hidden = yes } }
+		27= { btc_remove_any_lower_dev_from_dev = yes add_province_modifier = { name = btc_reduced_cost_from_dev_27 duration = -1 hidden = yes } }
+		26= { btc_remove_any_lower_dev_from_dev = yes add_province_modifier = { name = btc_reduced_cost_from_dev_26 duration = -1 hidden = yes } }
+		25= { btc_remove_any_lower_dev_from_dev = yes add_province_modifier = { name = btc_reduced_cost_from_dev_25 duration = -1 hidden = yes } }
+		24= { btc_remove_any_lower_dev_from_dev = yes add_province_modifier = { name = btc_reduced_cost_from_dev_24 duration = -1 hidden = yes } }
+		23= { btc_remove_any_lower_dev_from_dev = yes add_province_modifier = { name = btc_reduced_cost_from_dev_23 duration = -1 hidden = yes } }
+		22= { btc_remove_any_lower_dev_from_dev = yes add_province_modifier = { name = btc_reduced_cost_from_dev_22 duration = -1 hidden = yes } }
+		21= { btc_remove_any_lower_dev_from_dev = yes add_province_modifier = { name = btc_reduced_cost_from_dev_21 duration = -1 hidden = yes } }
+		20= { btc_remove_any_lower_dev_from_dev = yes add_province_modifier = { name = btc_reduced_cost_from_dev_20 duration = -1 hidden = yes } }
+		19= { btc_remove_any_lower_dev_from_dev = yes add_province_modifier = { name = btc_reduced_cost_from_dev_19 duration = -1 hidden = yes } }
+		18= { btc_remove_any_lower_dev_from_dev = yes add_province_modifier = { name = btc_reduced_cost_from_dev_18 duration = -1 hidden = yes } }
+		17= { btc_remove_any_lower_dev_from_dev = yes add_province_modifier = { name = btc_reduced_cost_from_dev_17 duration = -1 hidden = yes } }
+		16= { btc_remove_any_lower_dev_from_dev = yes add_province_modifier = { name = btc_reduced_cost_from_dev_16 duration = -1 hidden = yes } }
+		15= { btc_remove_any_lower_dev_from_dev = yes add_province_modifier = { name = btc_reduced_cost_from_dev_15 duration = -1 hidden = yes } }
+		14= { btc_remove_any_lower_dev_from_dev = yes add_province_modifier = { name = btc_reduced_cost_from_dev_14 duration = -1 hidden = yes } }
+		13= { btc_remove_any_lower_dev_from_dev = yes add_province_modifier = { name = btc_reduced_cost_from_dev_13 duration = -1 hidden = yes } }
+		12= { btc_remove_any_lower_dev_from_dev = yes add_province_modifier = { name = btc_reduced_cost_from_dev_12 duration = -1 hidden = yes } }
+		11= { btc_remove_any_lower_dev_from_dev = yes add_province_modifier = { name = btc_reduced_cost_from_dev_11 duration = -1 hidden = yes } }
+		10= { btc_remove_any_lower_dev_from_dev = yes add_province_modifier = { name = btc_reduced_cost_from_dev_10 duration = -1 hidden = yes } }
+
+	}
+}
+		

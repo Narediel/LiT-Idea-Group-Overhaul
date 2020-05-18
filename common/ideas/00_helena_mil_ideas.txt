@@ -1,0 +1,464 @@
+# Do not change tags in here without changing every other reference to them.
+# Do not change tags in here without changing every other reference to them.
+# If adding new groups or ideas, make sure they are unique.
+
+# ai_will do is only used to determine which idea group is picked if AI_USES_HISTORICAL_IDEA_GROUPS define is 0, OR start is custom/random
+# ai never picks an idea that resolves to ai_will_do = 0, even if AI_USES_HISTORICAL_IDEA_GROUPS = 1
+# ROOT = country picking the idea
+# groups set to colonial=yes will be higher prioritized by the AI when spending power
+
+quality_ideas = { #Professional Army Ideas
+	category = MIL
+
+	bonus = {
+		land_forcelimit_modifier = -0.15
+	}
+
+	private_to_marshal = {
+		infantry_power = 0.075
+		cavalry_power = 0.075
+	}
+	btc_war_cabinet_idea = {
+		mil_advisor_cost = -0.1
+		#Enables war cabinets
+	}
+	btc_quality_idea_3 = {
+		
+	}
+	military_drill = {
+		land_morale = 0.05
+		drill_gain_modifier = 1
+	}
+	btc_military_academy_idea = {
+		yearly_army_professionalism = 0.005
+		discipline = 0.035
+	}
+	btc_quality_idea_6 = {
+		
+	}
+	massed_battery = {
+		artillery_power = 0.1
+	}
+
+	ai_will_do = {
+		factor = 0.49
+	}
+}
+
+
+quantity_ideas = { #Conscripted Army Ideas
+	category = MIL
+
+	bonus = {
+		discipline = -0.035
+	}
+	btc_conscript_farmers_idea = {
+		global_manpower = 2
+		#Decision to conscript farmers
+	}
+	the_young_can_serve = {
+		manpower_recovery_speed = 0.20
+	}
+	the_old_and_infirm = {
+		global_regiment_cost = -0.1
+	}
+	btc_morale_conscript_idea = {
+		land_morale = 0.15
+	}
+	expanded_supply_trains = {
+		land_attrition = -0.2
+	}
+	enforced_service = {
+		land_forcelimit_modifier  = 0.35
+	}
+	mass_army = {
+		global_manpower_modifier = 0.4
+	}
+
+	ai_will_do = {
+		factor = 1.0
+	}
+}
+
+btc_irregular_army_ideas = {
+	category = MIL
+
+	bonus = {
+		army_tradition_from_battle = -0.5
+	}
+	
+	benefits_for_mercenaries = {
+		merc_maintenance_modifier = -0.25
+	}
+	organised_mercenary_recruitment = {
+		possible_mercenaries = 0.5
+	}
+	btc_irregular_looting_idea = {
+		loot_amount = 0.5
+		raze_power_gain = 0.25
+	}
+	btc_irregular_veteran_mercs_idea = {
+		mercenary_discipline = 0.15
+	}
+	btc_irregular_war_exhaustion_idea = {
+		war_exhaustion = -0.04
+		global_unrest = -1
+	}
+	btc_irregular_guerrilla_idea = {
+		land_attrition = -0.15
+		movement_speed = 0.15
+	}
+	btc_irregular_rehiring_idea = {
+		reinforce_speed = 0.15
+		reinforce_cost_modifier = -0.15
+	}
+	
+	ai_will_do = {
+		factor = 0.45
+		modifier = {
+			factor = 2
+			is_subject = yes
+		}	
+	}
+}
+
+aristocracy_ideas = {
+	category = MIL
+
+	bonus = {
+		leader_siege = 1
+	}
+
+	trigger = {
+		OR = {
+			has_government_attribute = enables_aristocratic_idea_group
+			government = theocracy
+			government = tribal
+		}
+	}
+	
+	noble_knights = {
+		cavalry_power = 0.10
+		cavalry_cost = -0.10
+	}
+	military_traditions = {
+		mil_tech_cost_modifier  = -0.1
+	}
+	local_nobility = {
+		global_autonomy = -0.05
+		yearly_absolutism = 0.5
+	}
+	serfdom = {
+		global_manpower_modifier = 0.33
+	}
+	noble_officers = {
+		army_tradition_decay = -0.01
+		navy_tradition_decay = -0.01
+	}
+	international_nobility = {
+		diplomats = 1
+		free_leader_pool = 1
+	}
+	noble_resilience = {
+		possible_mercenaries = 0.20
+	}
+	
+
+	ai_will_do = {
+		factor = 0.45
+		
+		modifier = {
+			factor = 0.5
+			is_subject = yes
+		}	
+	}
+}
+
+
+plutocracy_ideas = {
+	category = MIL
+
+	bonus = {
+		global_institution_spread = 0.10
+	}
+
+	trigger = {
+		has_government_attribute = enables_plutocratic_idea_group
+	}
+
+	tradition_of_payment = {
+		possible_mercenaries = 0.10
+		mercenary_discipline = 0.025
+	}
+	abolished_serfdom = {
+		land_morale = 0.10
+	}
+	bill_of_rights = {
+		global_unrest = -2
+	}
+	free_merchants = {
+		merchants = 1
+	}
+	free_subjects = {
+		global_trade_goods_size_modifier = 0.1
+	}
+	free_cities = {
+		caravan_power = 0.25
+	}
+	emancipation = {
+		manpower_recovery_speed = 0.2
+	}
+
+	ai_will_do = {
+		factor = 0.4
+	}
+}
+
+offensive_ideas = {
+	category = MIL
+
+	bonus = {
+		recover_army_morale_speed = 0.05
+	}
+
+	bayonet_leaders = {
+		leader_land_shock = 1
+	}
+	national_conscripts = {
+		global_regiment_recruit_speed = -0.1
+	}
+	superior_firepower = {
+		leader_land_fire = 1
+	}
+	glorious_arms = {
+		prestige_from_land = 1.0
+	}
+	btc_offensive_idea_5 = {
+		
+	}
+	grand_army = {
+		land_forcelimit_modifier = 0.2
+	}
+	napoleonic_warfare = {
+		discipline = 0.05
+	}
+
+	ai_will_do = {
+		factor = 0.94
+	}
+}
+
+
+defensive_ideas = {
+	category = MIL
+
+	bonus = {
+		hostile_attrition = 1
+	}
+
+	garrison_conscription = {
+		garrison_size = 0.25
+	}
+	btc_defensive_idea_2 = {
+		
+	}
+	btc_defensive_idea_3 = {
+		
+	}
+	nationalistic_enthusiasm = {
+		land_maintenance_modifier = -0.05
+	}
+	defensive_mentality = {
+		defensiveness = 0.2
+		fort_maintenance_modifier = -0.1
+	}
+	btc_improved_ditches = {
+		defensiveness = 0.1
+		#Unlocks ditch building
+	}
+	btc_defensive_idea_7 = {
+		
+	}
+
+	ai_will_do = {
+		factor = 0.77
+	}
+}
+
+btc_logistic_ideas = {
+	category = MIL
+
+	bonus = {
+		land_maintenance_modifier = 0.035
+	}
+
+	quality_education = { #Battleplans
+		army_tradition = 0.5
+		shock_damage_received = -0.05
+	}
+	improved_foraging = {
+		global_supply_limit_modifier = 0.33
+	}
+	supply_trains = {
+		reinforce_speed = 0.33
+	}
+	improved_manuever = {
+		leader_land_manuever = 2
+	}
+	engineer_corps = {
+		artillery_bonus_vs_fort = 1
+		siege_blockade_progress = 1
+	}
+	btc_innovative_siege_idea = {
+		siege_ability = 0.1
+		land_attrition = -0.1
+	}
+	btc_military_science_idea = {
+		mil_tech_cost_modifier = -0.1
+		innovativeness_gain = 0.25
+	}
+
+	ai_will_do = {
+		factor = 0.77
+	}
+}
+
+naval_ideas = { #Open Sea Warfare
+	category = MIL
+
+	trigger = {
+		primitives = no
+	}
+
+	bonus = {
+		ship_durability = 0.1
+	}
+
+	copper_bottoms = {
+		naval_attrition = -0.25
+	}
+	btc_naval_idea_2 = {
+		
+	}
+	naval_cadets = {
+		leader_naval_fire = 1
+		sunk_ship_morale_hit_recieved = -0.33
+	}
+	naval_glory = {
+		navy_tradition = 1
+	}
+	press_gangs = {
+		sailors_recovery_speed = 0.25
+	}
+	oak_forests_for_ships = {
+		heavy_ship_power = 0.20
+	}
+	superior_seamanship = {
+		naval_morale = 0.1
+		global_naval_engagement_modifier = 0.1
+	}
+
+	ai_will_do = {
+		factor = 0.31
+		modifier = {
+			factor = 0
+			is_tribal = yes
+		}
+		modifier = {
+			factor = 0
+			primitives = yes
+		}
+		modifier = {
+			factor = 0
+			NOT = { num_of_ports = 1 }
+			NOT = { is_colonial_nation = yes }
+		}
+		modifier = {
+			factor = 0.31
+			NOT = { num_of_ports = 10 }
+		}
+		modifier = {
+			factor = 0.31
+			num_of_cities = 50
+		}
+
+		modifier = {
+			factor = 10
+			OR = {
+				has_reform = pirate_republic_reform
+				has_reform = pirate_kingdom
+				has_reform = war_against_the_world_government
+				has_reform = black_market_consortium_government
+			}
+		}
+	}
+}
+
+btc_inland_warfare_ideas = { #Inland Sea Warfare
+	category = MIL
+
+	trigger = {
+		primitives = no
+	}
+
+	bonus = {
+		heavy_ship_power = -0.1
+	}
+
+	btc_inland_warfare_idea_1 = {
+		
+	}
+	btc_inland_warfare_idea_2 = {
+		
+	}
+	btc_inland_warfare_idea_3 = {
+		
+	}
+	escort_ships = {
+		ship_durability = 0.05
+	}
+	naval_drill = {
+		naval_morale = 0.10
+	}
+	boarding_parties = {
+		leader_naval_shock = 1
+	}
+	improved_rams = {
+		galley_power = 0.25
+	}
+
+	ai_will_do = {
+		factor = 0.31
+		modifier = {
+			factor = 0
+			is_tribal = yes
+		}
+		modifier = {
+			factor = 0
+			primitives = yes
+		}
+		modifier = {
+			factor = 0
+			NOT = { num_of_ports = 1 }
+			NOT = { is_colonial_nation = yes }
+		}
+		modifier = {
+			factor = 0.31
+			NOT = { num_of_ports = 10 }
+		}
+		modifier = {
+			factor = 0.31
+			num_of_cities = 50
+		}
+
+		modifier = {
+			factor = 10
+			OR = {
+				has_reform = pirate_republic_reform
+				has_reform = pirate_kingdom
+				has_reform = war_against_the_world_government
+				has_reform = black_market_consortium_government
+			}
+		}
+	}
+}

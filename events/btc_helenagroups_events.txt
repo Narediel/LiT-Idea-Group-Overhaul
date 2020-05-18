@@ -1,0 +1,170 @@
+namespace = helenagroups_events
+
+#Country Roads event 1
+country_event = {
+    id = helenagroups_events.1
+    hidden = yes
+    
+    mean_time_to_happen = {
+        days = 1
+    }
+    
+    trigger = {
+        has_idea = infr_idea_6
+        NOT = { has_country_flag = agriculture_events_started }
+    }
+    
+    immediate = {
+        set_country_flag = agriculture_events_started
+        country_event = {
+            id = helenagroups_events.2
+        }
+    }
+    
+    option = { ai_chance = { factor = 1 } }
+}
+#Country roads event 2
+country_event = {
+    id = helenagroups_events.2
+    hidden = yes
+    is_triggered_only = yes
+    
+    immediate = {
+        if = {      #If the country hasn't refunded the idea group
+            limit = { has_idea = infr_idea_6 }    
+            country_event = {   #Trigger event every month
+                id = helenagroups_events.2
+                days = 30
+            }
+            every_owned_province = {    #Apply bonus to eligible provinces
+                limit = {
+                    eligible_for_agriculture_bonus = yes
+                    NOT = { has_province_modifier = agriculture_province_bonus }
+                }
+                add_province_modifier = {
+                    name = agriculture_province_bonus
+                    duration = -1
+                }
+            }
+            every_owned_province = {    #Remove bonus from non eligible provinces
+                limit = {
+                    has_province_modifier = agriculture_province_bonus
+                    NOT = { eligible_for_agriculture_bonus = yes }
+                }
+                remove_province_modifier = agriculture_province_bonus
+            }
+        }
+        else = {    #If the country refunded the idea group
+            every_owned_province = {    #Remove bonus
+                limit = { has_province_modifier = agriculture_province_bonus }
+                remove_province_modifier = agriculture_province_bonus
+            }
+            clr_country_flag = agriculture_events_started
+            #So event 1 may trigger again if country picks agriculture ideas
+        }
+    }
+    
+    option = { ai_chance = { factor = 1 } }
+}
+
+#Infrastructure ideas Possible Buildings event 1
+country_event = {
+    id = helenagroups_events.3
+    hidden = yes
+    
+    mean_time_to_happen = {
+        days = 1
+    }
+    
+    trigger = {
+        has_idea = infr_idea_4
+        NOT = { has_country_flag = infr_extra_slot_events_started }
+    }
+    
+    immediate = {
+        set_country_flag = infr_extra_slot_events_started
+        country_event = {
+            id = helenagroups_events.4
+        }
+    }
+    
+    option = { ai_chance = { factor = 1 } }
+}
+
+#Infrastructure ideas Possible Buildings event 2
+country_event = {
+    id = helenagroups_events.4
+    hidden = yes
+    is_triggered_only = yes
+    
+    immediate = {
+        if = {      #If the country hasn't refunded the idea group
+            limit = { has_idea = infr_idea_4 }    
+            country_event = {   #Trigger event every month
+                id = helenagroups_events.4
+                days = 30
+            }
+            every_owned_province = {    #Apply bonus to eligible provinces
+                limit = {
+                    NOT = { has_province_modifier = btc_infrastructure_ideas_possible_buildings }
+                }
+                add_province_modifier = {
+                    name = btc_infrastructure_ideas_possible_buildings
+                    duration = -1
+					hidden = yes
+                }
+            }
+        }
+        else = {    #If the country refunded the idea group
+            every_owned_province = {    #Remove bonus
+                limit = { has_province_modifier = btc_infrastructure_ideas_possible_buildings }
+                remove_province_modifier = btc_infrastructure_ideas_possible_buildings
+            }
+            clr_country_flag = infr_extra_slot_events_started
+            #So event 1 may trigger again if country picks agriculture ideas
+        }
+    }
+    
+    option = { ai_chance = { factor = 1 } }
+}
+
+#War Cabinet event 1
+country_event = {
+    id = helenagroups_events.5
+    hidden = yes
+    
+    mean_time_to_happen = { days = 1 }
+    
+    trigger = {
+        has_idea = btc_war_cabinet_idea
+        is_at_war = yes
+		NOT = { has_country_modifier = btc_war_cabinet_modifier }
+    }
+    
+    immediate = {
+        add_country_modifier = {
+			name = btc_war_cabinet_modifier
+			duration = -1
+			hidden = yes
+		}
+    }
+    
+    option = { ai_chance = { factor = 1 } }
+}
+
+#War Cabinet event 2
+country_event = {
+    id = helenagroups_events.6
+    hidden = yes
+    
+    mean_time_to_happen = { days = 1 }
+    
+    trigger = {
+        is_at_war = no
+		has_country_modifier = btc_war_cabinet_modifier
+    }
+    
+    immediate = { remove_country_modifier = btc_war_cabinet_modifier }
+    
+    option = { ai_chance = { factor = 1 } }
+}

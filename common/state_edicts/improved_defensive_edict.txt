@@ -1,0 +1,20 @@
+improved_edict_defensive_edict = {
+	potential = {
+		has_idea = btc_public_administration_idea
+	}
+	
+	allow = {
+		always = yes
+	}
+	
+	modifier = {
+		local_defensiveness = 0.35
+	}
+	
+	color = {  46 114 55  }
+	
+	
+	ai_will_do = {
+		factor = 0
+	}
+}

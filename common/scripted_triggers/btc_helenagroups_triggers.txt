@@ -1,0 +1,19 @@
+eligible_for_agriculture_bonus = {
+	NOT = { development = 8 }
+	OR = {
+		trade_goods = grain
+		trade_goods = rice
+		trade_goods = potatoes
+		trade_goods = maize
+		trade_goods = millet
+		trade_goods = fruit
+		trade_goods = apiculture
+		trade_goods = olives
+		trade_goods = dates
+		trade_goods = amaranth
+		trade_goods = legumes
+		trade_goods = teff
+		trade_goods = livestock
+		trade_goods = wool
+	}
+}

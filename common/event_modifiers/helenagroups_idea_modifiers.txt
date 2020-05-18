@@ -1,0 +1,17 @@
+btc_recently_conscripted_mod = {
+	local_manpower_modifier = -0.35
+	local_unrest = 2
+}
+
+agriculture_province_bonus = {
+	local_production_efficiency = 0.1
+	local_development_cost = -0.05
+}
+
+btc_infrastructure_ideas_possible_buildings = {
+	allowed_num_of_buildings = 1
+}
+
+btc_war_cabinet_modifier = {
+	mil_advisor_cost = -0.15
+}

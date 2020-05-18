@@ -1,0 +1,21 @@
+improved_edict_encourage_development = {
+	potential = {
+		has_idea = btc_public_administration_idea
+	}
+	
+	allow = {
+		always = yes
+	}
+	
+	modifier = {
+		local_development_cost = -0.15
+	}
+	
+	color = {  244 184 12  }
+	
+	
+	ai_will_do = {
+		factor = 0
+	}
+	
+}
