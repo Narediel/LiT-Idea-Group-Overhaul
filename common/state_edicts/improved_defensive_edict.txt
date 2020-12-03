@@ -8,7 +8,7 @@ improved_edict_defensive_edict = {
 	}
 	
 	modifier = {
-		local_defensiveness = 0.35
+		local_defensiveness = 0.3
 	}
 	
 	color = {  46 114 55  }

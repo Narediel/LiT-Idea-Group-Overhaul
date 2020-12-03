@@ -8,7 +8,7 @@ edict_protect_trade = {
 	}
 	
 	modifier = {
-		province_trade_power_modifier = 0.35
+		province_trade_power_modifier = 0.3
 	}
 	
 	color = {  113 11 43 }

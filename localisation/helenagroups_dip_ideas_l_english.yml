@@ -1,5 +1,18 @@
 ﻿l_english:
+ #Thalassocracy ideas
+ btc_thalassocracy_ideas: "Thalassocracy Ideas §G(*)§!"
+ btc_thalassocracy_ideas_bonus: "Full Thalassocracy Ideas"
 
+ #Imperialist Ideas
+ btc_imperialist_ideas:0 "Imperialist Ideas"
+ btc_imperialist_ideas_bonus:0 "Full Imperialist Ideas"
+ 
+ #Influence ideas
+ btc_big_subjects_idea: "Proxy Might Also Makes Right"
+ btc_big_subjects_idea_desc: "Just like a good attack is sometimes the best defense, sometimes the most appropiate way to keep our subjects loyal is to cave in to their ambitions. With a little of nice wording, we can grant our subjects more lands and make it look like we are doing them a favour, keeping them happy so long their strength is valued.\n\n§YUnlocks feature§!:\n§GStrong Subjects:§! Removes all subject nation §Rpenalties§! (such as increased §Ydevelopment cost§!) from our subjects\nAlso gain the following permanent, nation-wide modifiers:"
+ btc_kraterocracy_idea: "Kraterocracy"
+ btc_kraterocracy_idea_desc: "There are those who rule, and those who serve. We do not serve. Be it through ruthless diplomacy or will of power, our nation is always on top, subjugating those weaker than us. Might makes right and we will exert our right and might as broad as we can.\n\n§YUnlocks feature§!:\n§GRule By Might:§! Gain access to the §YDomination§! Casus Belli, an improved version of §YSubjugation§! CB that allows for larger nations to be vassalized.\nCan be used against:\n- Any nation §Rwithin trade range§! under §Y75§! development\n- Any nation §Rwithin trade range§! §Gsmaller§! than us between §Y75§! and §Y150§! development\nAlso gain the following permanent, nation-wide modifiers:""
+ 
  #Mercantilist Ideas
  btc_mercantilist_ideas: "Mercantilist Trade Ideas"
  btc_mercantilist_ideas_bonus: "Full Mercantilist Trade Ideas"
@@ -12,14 +25,23 @@
  btc_trade_exclaves_idea: "Stato da Màr"
  btc_trade_exclaves_idea_desc: "Our mainland possessions aren't enough if we want to impose our economical supremacy over the region. Enemies loom at our doorsteps, enemies who threaten our trade routes and merchants. We must secure a monopoly in our trade routes and doing so requires having absolute control of the most important ports around us.\n\n§YUnlocks feature§!:\n§GSea Hegemony:§! Gain access to the §YMercantile War§! casus belli, an improved trade war that allows the conquest of Centers of Trade at a reduced cost.\nCan be used against:\n- Any nation embargoing us\n- Any Merchant Republic within nodes where we are active\n- The nation with most trade power in nodes where we hold at least §Y10%§! of trade power\nAlso gain the following permanent, nation-wide modifiers:"
  btc_trade_families_idea: "Merchant Families"
- btc_trade_families_idea_desc: "Not all power lies within nobility titles. Our nation's focus on trade has bolstered the burgher class status, facilitating the creation of several merchant families; people who have accumulated a fair amount of wealth and through it project influence upon the cities they operate in. By giving some of these families trading and traveling privileges, we can make many of the most influential individuals within our realm to be indebted of favours towards us. This way, in the future, we might use them to help extend our trading monopolies.\n\n§YBurghers§! monthly loyalty: §G+15.00%§!"
- 
- #Thalassocracy ideas
- btc_thalassocracy_ideas: "Thalassocracy Ideas"
- btc_thalassocracy_ideas_bonus: "Full Thalassocracy Ideas"
- 
+ btc_trade_families_idea_desc: "Not all power lies within nobility titles. Our nation's focus on trade has bolstered the burgher class status, facilitating the creation of several merchant families; people who have accumulated a fair amount of wealth and through it project influence upon the cities they operate in. By giving some of these families trading and traveling privileges, we can make many of the most influential individuals within our realm to be indebted of favours towards us. This way, in the future, we might use them to help extend our trading monopolies.\n"
+ btc_impose_tariffs_idea: "Impose Tariffs"
+ btc_impose_tariffs_idea_desc: "In this ruthless world fair competition is not only barely existant, but not enough. If we are to prosper over our adversaries we must be agressive and attack where it most hurt: their economies. By imposing tariffs on foreign goods and subsidizing our own, we will always be at the top.\n"
+
  #Modifiers and misc
  cb_btc_improved_trade_war: "Mercantile War"
  cb_btc_improved_trade_war_desc: "We can annex new exclaves."
  MERCANTILE_WAR_NAME:0 "$ORDER$$FIRST$-$SECOND$ Mercantile War"
  EST_VAL_MERCANTILIST_IDEAS:0 "Merchant Families: $VAL|Y$"
+ btc_influence_subject_nation_mod:0 "Strong Subject"
+ desc_btc_influence_subject_nation_mod:0 "The influence skills of our master allows us to be stronger than other subject nations."
+ btc_influence_vassal_nation_mod:0 "Strong Subject"
+ desc_btc_influence_vassal_nation_mod:0 "The influence skills of our master allows us to be stronger than other subject nations."
+ cb_btc_influence_subjugation: "Domination"
+ cb_btc_influence_subjugation_desc: "Vassalize nations who are under 75 development or nations smaller than you between 75 and 150 development."
+ BTC_INFL_SUBJ_WAR_NAME: "$ORDER$$FIRST$ Domination of $SECOND_NAME$"
+ btc_influence_subjugation_peace_desc: ""
+ CB_ALLOWED_btc_influence_subjugation_peace: "Enforced Domination"
+ PEACE_btc_influence_subjugation_peace: "Becomes $TAKER$ Subject"
+ 

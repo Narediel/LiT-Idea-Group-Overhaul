@@ -12,4 +12,4 @@ tags={
 }
 name="LiT Idea Group Overhaul Development"
 picture="thumbnail.png"
-supported_version="1.29.6"
+supported_version="1.30.*"

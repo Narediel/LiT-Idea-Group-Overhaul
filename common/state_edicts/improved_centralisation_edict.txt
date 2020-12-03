@@ -8,7 +8,7 @@ improved_edict_centralization_effort = {
 	}
 	
 	modifier = {
-		local_autonomy = -0.05
+		local_autonomy = -0.04
 	}
 	
 	color = {  220 178 155 }

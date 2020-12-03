@@ -168,3 +168,244 @@ country_event = {
     
     option = { ai_chance = { factor = 1 } }
 }
+
+#Peace-keeping companies event 1
+country_event = {
+    id = helenagroups_events.7
+    hidden = yes
+    
+    mean_time_to_happen = { days = 1 }
+    
+    trigger = {
+        has_idea = btc_permanent_mercs_idea
+        is_at_war = no
+		NOT = { has_country_modifier = btc_peacekeeping_companies_modifier }
+    }
+    
+    immediate = {
+        add_country_modifier = {
+			name = btc_peacekeeping_companies_modifier
+			duration = -1
+			hidden = yes
+		}
+    }
+    
+    option = { ai_chance = { factor = 1 } }
+}
+
+#Peace-keeping companies event 2
+country_event = {
+    id = helenagroups_events.8
+    hidden = yes
+    
+    mean_time_to_happen = { days = 1 }
+    
+    trigger = {
+		is_at_war = yes
+		has_country_modifier = btc_peacekeeping_companies_modifier
+    }
+    
+	immediate = { remove_country_modifier = btc_peacekeeping_companies_modifier }
+    
+    option = { ai_chance = { factor = 1 } }
+}
+
+#Census start event
+country_event = {
+    id = helenagroups_events.8
+    hidden = yes
+    
+    mean_time_to_happen = { days = 1 }
+    
+    trigger = {
+        has_idea = btc_regular_census
+		NOT = { has_country_flag = btc_started_censuses }
+    }
+    
+    immediate = {
+		set_country_flag = btc_started_censuses
+		country_event = {
+			id = helenagroups_events.9
+			days = 30
+		}
+    }
+    
+    option = { ai_chance = { factor = 1 } }
+}
+
+#Census main event 1
+country_event = {
+	id = helenagroups_events.9
+	title = "helenagroups_events.9.t"
+	desc = "helenagroups_events.9.d"
+	picture = {
+		trigger = {
+			has_dlc = "Star and Crescent"
+			religion_group = muslim
+		}
+	   picture = muslimgfx_ECONOMY_eventPicture
+	}
+	picture = {
+	   trigger = { NOT = { religion_group = muslim } }
+	   picture = OVEREXTENSION_eventPicture
+	}
+	
+	is_triggered_only = yes
+
+	trigger ={ has_idea = btc_regular_census }
+
+	option = { #Carry out exhaustive census with extra state officials
+		name = "helenagroups_events.9.a"
+		add_country_modifier = {
+			name = btc_doing_exhaustive_census_mod
+			duration = 365
+		}
+		country_event = {
+			id = helenagroups_events.10
+			days = 365
+			tooltip = btc_census_exhaustive_tooltip
+		}
+	}
+	option = { #Carry out regular census with some estimations
+		name = "helenagroups_events.9.b"
+		country_event = {
+			id = helenagroups_events.11
+			days = 365
+			tooltip = btc_census_regular_tooltip
+		}
+	}
+	option = { #Not this time
+		name = "helenagroups_events.9.c"
+		country_event = {
+			id = helenagroups_events.9
+			days = 3650
+			tooltip = btc_census_rejected_tooltip
+		}
+	}
+}
+
+#Census main event 2, exhaustive census
+country_event = {
+	id = helenagroups_events.10
+	title = "helenagroups_events.10.t"
+	desc = "helenagroups_events.10.d"
+	picture = {
+		trigger = {
+			has_dlc = "Star and Crescent"
+			religion_group = muslim
+		}
+	   picture = muslimgfx_ECONOMY_eventPicture
+	}
+	picture = {
+	   trigger = { NOT = { religion_group = muslim } }
+	   picture = ECONOMY_eventPicture
+	}
+	
+	is_triggered_only = yes
+	
+	trigger ={ has_idea = btc_regular_census }
+	
+	option = {
+		name = "helenagroups_events.10.a"
+		add_yearly_manpower = 1
+		add_years_of_income = 1
+		hidden_effect = {
+			country_event = {
+				id = helenagroups_events.9
+				days = 3285
+			}
+		}
+	}
+}
+
+#Census main event 3, regular census
+country_event = {
+	id = helenagroups_events.11
+	title = "helenagroups_events.10.t"
+	desc = "helenagroups_events.10.d"
+	picture = {
+		trigger = {
+			has_dlc = "Star and Crescent"
+			religion_group = muslim
+		}
+	   picture = muslimgfx_ECONOMY_eventPicture
+	}
+	picture = {
+	   trigger = { NOT = { religion_group = muslim } }
+	   picture = ECONOMY_eventPicture
+	}
+	
+	is_triggered_only = yes
+
+	trigger ={ has_idea = btc_regular_census }
+
+	option = {
+		name = "helenagroups_events.10.a"
+		add_yearly_manpower = 0.5
+		add_years_of_income = 0.5
+		hidden_effect = {
+			country_event = {
+				id = helenagroups_events.9
+				days = 3285
+			}
+		}
+	}
+}
+
+#Strong subjects event 1
+country_event = {
+    id = helenagroups_events.12
+    hidden = yes
+    
+    mean_time_to_happen = { days = 1 }
+    
+    trigger = {
+		overlord = { has_idea = btc_big_subjects_idea }
+		is_subject_of_type = vassal
+		NOT = { has_country_modifier = btc_influence_vassal_nation_mod }
+    }
+    
+    immediate = {
+        add_country_modifier = {
+			name = btc_influence_vassal_nation_mod
+			duration = -1
+			hidden = yes
+		}
+		if = {
+			limit = { has_country_modifier = btc_influence_subject_nation_mod }
+			remove_country_modifier = btc_influence_subject_nation_mod
+		}
+    }
+    
+    option = { ai_chance = { factor = 1 } }
+}
+
+#Strong subjects event 2
+country_event = {
+    id = helenagroups_events.12
+    hidden = yes
+    
+    mean_time_to_happen = { days = 1 }
+    
+    trigger = {
+		overlord = { has_idea = btc_big_subjects_idea }
+		is_subject = yes
+		NOT = { is_subject_of_type = tributary_state }
+		NOT = { is_subject_of_type = vassal }
+		NOT = { has_country_modifier = btc_influence_subject_nation_mod }
+    }
+    
+    immediate = {
+        add_country_modifier = {
+			name = btc_influence_subject_nation_mod
+			duration = -1
+			hidden = yes
+		}
+		if = {
+			limit = { has_country_modifier = btc_influence_vassal_nation_mod }
+			remove_country_modifier = btc_influence_vassal_nation_mod
+		}
+    }
+    
+    option = { ai_chance = { factor = 1 } }
+}

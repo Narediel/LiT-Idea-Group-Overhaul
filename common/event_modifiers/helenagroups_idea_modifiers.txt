@@ -13,5 +13,27 @@ btc_infrastructure_ideas_possible_buildings = {
 }
 
 btc_war_cabinet_modifier = {
-	mil_advisor_cost = -0.15
+	mil_advisor_cost = -0.25
+}
+
+btc_peacekeeping_companies_modifier = {
+	merc_maintenance_modifier = -0.5
+	global_unrest = 5
+}
+
+btc_doing_exhaustive_census_mod = {
+	advisor_cost = 0.1
+}
+
+btc_influence_subject_nation_mod = {
+	global_tax_income = 6
+	land_forcelimit	= 3
+	naval_forcelimit = 6
+}
+
+btc_influence_vassal_nation_mod = {
+	development_cost = -0.5
+	global_tax_income = 6
+	land_forcelimit	= 3
+	naval_forcelimit = 6
 }

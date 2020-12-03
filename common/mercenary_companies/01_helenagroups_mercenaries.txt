@@ -1,0 +1,87 @@
+merc_good_veterans_btc = {
+    regiments_per_development = 0.07
+	cavalry_weight = 0
+	artillery_weight = 0.45
+	cost_modifier = 0.6
+	trigger = {
+		full_idea_group = btc_irregular_army_ideas
+	}
+    modifier = {
+		fire_damage_received = -0.1
+		shock_damage_received = -0.1
+		army_tradition_from_battle = 0.5
+	}
+}
+
+merc_good_second_veterans_btc = {
+    regiments_per_development = 0.07
+	cavalry_weight = 0
+	artillery_weight = 0.47
+	cost_modifier = 0.6
+	trigger = {
+		full_idea_group = btc_irregular_army_ideas
+	}
+	modifier = {
+		fire_damage_received = -0.1
+		shock_damage_received = -0.1
+		army_tradition_from_battle = 0.5
+	}
+}
+
+merc_irregular_inf_one = {
+    regiments_per_development = 0.07
+    cavalry_weight = 0
+    artillery_weight = 0
+	cost_modifier = 0.6
+    trigger = {
+		has_idea = organised_mercenary_recruitment
+    }
+	modifier = {
+		army_tradition_from_battle = 0.5
+	}
+    # No home province means local mercenary company
+}
+
+merc_irregular_inf_two = {
+    regiments_per_development = 0.07
+    cavalry_weight = 0
+	artillery_weight = 0
+	cost_modifier = 0.6
+	trigger = {
+		has_idea = organised_mercenary_recruitment
+    }
+	modifier = {
+		army_tradition_from_battle = 0.5
+	}
+    # No home province means local mercenary company
+}
+
+merc_irregular_inf_three = {
+    regiments_per_development = 0.07
+    cavalry_weight = 0
+	artillery_weight = 0
+	infantry_cap = 30
+	cost_modifier = 0.6
+	trigger = {
+		has_idea = organised_mercenary_recruitment
+    }
+	modifier = {
+		army_tradition_from_battle = 0.5
+	}
+    # No home province means local mercenary company
+}
+
+merc_irregular_inf_four = {
+    regiments_per_development = 0.07
+    cavalry_weight = 0
+	artillery_weight = 0
+	infantry_cap = 30
+	cost_modifier = 0.6
+	trigger = {
+		has_idea = organised_mercenary_recruitment
+    }
+	modifier = {
+		army_tradition_from_battle = 0.5
+	}
+    # No home province means local mercenary company
+}

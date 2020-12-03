@@ -8,7 +8,7 @@ improved_edict_advancement_effort = {
 	}
 	
 	modifier = {
-		local_institution_spread = 0.40
+		local_institution_spread = 0.4
 	}
 	
 	color = { 50 173 192 }

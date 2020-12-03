@@ -1,6 +1,7 @@
-improved_edict_religious_unity = {
+edict_improved_organised_construction = {
 	potential = {
 		has_idea = btc_public_administration_idea
+		has_idea = organised_construction
 	}
 	
 	allow = {
@@ -8,23 +9,26 @@ improved_edict_religious_unity = {
 	}
 	
 	modifier = {
-		local_missionary_strength = 0.015
+		local_build_cost = -0.2
 	}
 	
-	color = { 117 38 143 }
+	color = {  220 178 155 }
+	
 	
 	ai_will_do = {
-		factor = 100
+		factor = 10
 		modifier = {
 			factor = 0
 			all_province_in_state = {
-				has_missionary = no
+				NOT = {
+					local_autonomy_above_min = 10
+				}
 			}
 		}
 		modifier = {
 			factor = 3
 			all_province_in_state = {
-				has_missionary = yes
+				local_autonomy_above_min = 10
 			}
 		}
 	}

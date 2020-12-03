@@ -53,7 +53,7 @@ quantity_ideas = { #Conscripted Army Ideas
 		discipline = -0.035
 	}
 	btc_conscript_farmers_idea = {
-		global_manpower = 2
+		global_manpower = 5
 		#Decision to conscript farmers
 	}
 	the_young_can_serve = {
@@ -68,11 +68,11 @@ quantity_ideas = { #Conscripted Army Ideas
 	expanded_supply_trains = {
 		land_attrition = -0.2
 	}
-	enforced_service = {
-		land_forcelimit_modifier  = 0.35
-	}
 	mass_army = {
 		global_manpower_modifier = 0.4
+	}
+	enforced_service = {
+		land_forcelimit_modifier  = 0.35
 	}
 
 	ai_will_do = {
@@ -87,30 +87,31 @@ btc_irregular_army_ideas = {
 		army_tradition_from_battle = -0.5
 	}
 	
-	benefits_for_mercenaries = {
-		merc_maintenance_modifier = -0.25
+	organised_mercenary_payment = {
+		mercenary_cost = -0.15
 	}
 	organised_mercenary_recruitment = {
-		possible_mercenaries = 0.5
+		mercenary_manpower = 0.5
+		#Access to infantry only companies
 	}
 	btc_irregular_looting_idea = {
 		loot_amount = 0.5
-		raze_power_gain = 0.25
+		available_province_loot = 0.5
 	}
-	btc_irregular_veteran_mercs_idea = {
-		mercenary_discipline = 0.15
+	btc_permanent_mercs_idea = {
+		merc_maintenance_modifier = -0.3
+		#Cheaper mercs at peace
 	}
 	btc_irregular_war_exhaustion_idea = {
-		war_exhaustion = -0.04
-		global_unrest = -1
-	}
-	btc_irregular_guerrilla_idea = {
-		land_attrition = -0.15
-		movement_speed = 0.15
+		war_exhaustion = -0.05
 	}
 	btc_irregular_rehiring_idea = {
 		reinforce_speed = 0.15
 		reinforce_cost_modifier = -0.15
+	}
+	btc_irregular_veteran_mercs_idea = {
+		mercenary_discipline = 0.05
+		#Access to better composition mercenaries
 	}
 	
 	ai_will_do = {
@@ -122,99 +123,7 @@ btc_irregular_army_ideas = {
 	}
 }
 
-aristocracy_ideas = {
-	category = MIL
-
-	bonus = {
-		leader_siege = 1
-	}
-
-	trigger = {
-		OR = {
-			has_government_attribute = enables_aristocratic_idea_group
-			government = theocracy
-			government = tribal
-		}
-	}
-	
-	noble_knights = {
-		cavalry_power = 0.10
-		cavalry_cost = -0.10
-	}
-	military_traditions = {
-		mil_tech_cost_modifier  = -0.1
-	}
-	local_nobility = {
-		global_autonomy = -0.05
-		yearly_absolutism = 0.5
-	}
-	serfdom = {
-		global_manpower_modifier = 0.33
-	}
-	noble_officers = {
-		army_tradition_decay = -0.01
-		navy_tradition_decay = -0.01
-	}
-	international_nobility = {
-		diplomats = 1
-		free_leader_pool = 1
-	}
-	noble_resilience = {
-		possible_mercenaries = 0.20
-	}
-	
-
-	ai_will_do = {
-		factor = 0.45
-		
-		modifier = {
-			factor = 0.5
-			is_subject = yes
-		}	
-	}
-}
-
-
-plutocracy_ideas = {
-	category = MIL
-
-	bonus = {
-		global_institution_spread = 0.10
-	}
-
-	trigger = {
-		has_government_attribute = enables_plutocratic_idea_group
-	}
-
-	tradition_of_payment = {
-		possible_mercenaries = 0.10
-		mercenary_discipline = 0.025
-	}
-	abolished_serfdom = {
-		land_morale = 0.10
-	}
-	bill_of_rights = {
-		global_unrest = -2
-	}
-	free_merchants = {
-		merchants = 1
-	}
-	free_subjects = {
-		global_trade_goods_size_modifier = 0.1
-	}
-	free_cities = {
-		caravan_power = 0.25
-	}
-	emancipation = {
-		manpower_recovery_speed = 0.2
-	}
-
-	ai_will_do = {
-		factor = 0.4
-	}
-}
-
-offensive_ideas = {
+offensive_ideas = { #Army Staff ideas
 	category = MIL
 
 	bonus = {
@@ -224,23 +133,23 @@ offensive_ideas = {
 	bayonet_leaders = {
 		leader_land_shock = 1
 	}
-	national_conscripts = {
-		global_regiment_recruit_speed = -0.1
+	btc_army_staff_2 = {
+		
 	}
 	superior_firepower = {
 		leader_land_fire = 1
 	}
-	glorious_arms = {
-		prestige_from_land = 1.0
-	}
-	btc_offensive_idea_5 = {
+	btc_army_staff_4 = {
 		
 	}
-	grand_army = {
-		land_forcelimit_modifier = 0.2
+	btc_army_staff_5 = {
+		
 	}
-	napoleonic_warfare = {
-		discipline = 0.05
+	btc_army_staff_6 = {
+		
+	}
+	btc_army_staff_7 = {
+		
 	}
 
 	ai_will_do = {
@@ -285,11 +194,47 @@ defensive_ideas = {
 	}
 }
 
+btc_mil_theory_ideas = {
+	category = MIL
+
+	bonus = {
+		
+	}
+
+	btc_mil_theory_1 = {
+		
+	}
+	btc_mil_theory_2 = {
+		
+	}
+	btc_mil_theory_3 = {
+		
+	}
+	btc_mil_theory_4 = {
+		
+	}
+	engineer_corps = {
+		artillery_bonus_vs_fort = 1
+		siege_blockade_progress = 1
+	}
+	btc_mil_theory_6 = {
+		
+	}
+	btc_military_science_idea = {
+		mil_tech_cost_modifier = -0.1
+		innovativeness_gain = 0.25
+	}
+
+	ai_will_do = {
+		factor = 0.77
+	}
+}
+
 btc_logistic_ideas = {
 	category = MIL
 
 	bonus = {
-		land_maintenance_modifier = 0.035
+		land_maintenance_modifier = 0.05
 	}
 
 	quality_education = { #Battleplans
@@ -305,17 +250,16 @@ btc_logistic_ideas = {
 	improved_manuever = {
 		leader_land_manuever = 2
 	}
-	engineer_corps = {
-		artillery_bonus_vs_fort = 1
-		siege_blockade_progress = 1
+	btc_logistic_5 = {
+		
 	}
 	btc_innovative_siege_idea = {
 		siege_ability = 0.1
 		land_attrition = -0.1
 	}
-	btc_military_science_idea = {
-		mil_tech_cost_modifier = -0.1
-		innovativeness_gain = 0.25
+	btc_irregular_guerrilla_idea = {
+		land_attrition = -0.15
+		movement_speed = 0.15
 	}
 
 	ai_will_do = {

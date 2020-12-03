@@ -1,6 +1,7 @@
-edict_centralization_effort = {
+edict_organised_construction = {
 	potential = {
 		NOT = { has_idea = btc_public_administration_idea }
+		has_idea = organised_construction
 	}
 	
 	allow = {
@@ -8,7 +9,7 @@ edict_centralization_effort = {
 	}
 	
 	modifier = {
-		local_autonomy = -0.02
+		local_build_cost = -0.1
 	}
 	
 	color = {  220 178 155 }

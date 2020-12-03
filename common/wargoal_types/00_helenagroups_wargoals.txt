@@ -51,3 +51,44 @@ btc_mercantilist_wargoal = {
 	
 	war_name = MERCANTILE_WAR_NAME
 }
+
+btc_influence_subjugation_wargoal = {
+	type = take_capital
+
+	attacker = {
+		badboy_factor = 1.0
+		prestige_factor = 2
+		peace_cost_factor = 1.0
+		peace_options = {
+			btc_influence_subjugation_peace
+			po_release_vassals
+			po_release_annexed
+			po_return_cores
+			po_revoke_cores
+			po_annul_treaties
+			po_gold
+			po_concede_defeat
+		}
+	}
+	defender = {
+		badboy_factor = 1.5
+		prestige_factor = 0.9
+		peace_cost_factor = 0.9
+		peace_options = {
+			po_demand_provinces
+			po_return_cores
+			po_revoke_cores
+			po_annul_treaties
+			po_release_vassals
+			po_release_annexed
+			po_gold
+			po_concede_defeat
+		}	
+	}
+	
+	
+	country_desc = ALL_NATIVES #no idea
+	prov_desc = ALL_PROVS #no idea
+	war_name = BTC_INFL_SUBJ_WAR_NAME
+
+}

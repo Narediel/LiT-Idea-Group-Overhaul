@@ -5,11 +5,18 @@
  btc_adm_effective_territories_idea_desc: "Land is a natural concept, many of our peoples are separate by simple linguistic, cultural or geographical barriers. However, these so called 'natural borders' often create unnecessary administrative burdens in management and pointless local councils. By rearranging our territories with sensible divisions that catter not just to geography but also politics we will be able to govern more efficiently.\n"
  btc_adm_streamlined_bureaucracy_idea: "Streamlined Bureaucracy"
  btc_adm_streamlined_bureaucracy_idea_desc: "Bureaucracy is good, it allows the state to have a tighter control on taxes, censuses, bookkeeping and overall a more defined presence of the state's officials. However, when a state grows too large a series of flaws begin to become more evident.\n\nFrom lazy tax collectors, to neverending status reports, to redundant positions in local councils, a big state becomes too much of a burden to maintain. Because of this, we must streamline our structure with a series of reforms that will seek to remove many of the more irrelevant or pointless offices and have more higher level councils that oversee tasks.\n"
+ 
  #Humanist
  btc_humanist_1: "Pragmatism"
  btc_humanist_1_desc: "Simply tolerating the different foreign peoples within our realm is not enough. As hard as it may be to admit, our people are not perfect, and foreign customs may probe valuable or even healthier ethics and lifestyles than our own. We must adapt and find the best alternatives between the different ways to approach problems and challenges so we can progress.\n"
  
+ #Delegative ideas
+ btc_delegative_ideas: "Delegative Ideas"
+ btc_delegative_ideas_desc: "Full Delegative Ideas"
+ 
  #Bureaucracy ideas
+ btc_regular_census:0 "Realiable Censuses"
+ btc_regular_census_desc:0 "A census is a complex procedure that can take a lot of time and manpower. And even then, it is but an estimation as many people live in more isolated rural parts of our realm. Nevertheless the benefits often outweight the downsides as having information about all our citizens allows us to increase both our tax revenue and our capabilities to recruit able-bodied men for the army.\n\nBy expanding the bureaucratic body tasked with carrying out censuses and establishing offices across all of our main cities we can maximize the detail at which they escrutiny reports, estimations and records, potentially increasing our taxes and records of future conscripts.\n\n§YUnlocks feature§!:\n§GDecennial Censuses§!: Gain the ability to carry out a census every §Y10§! years, increasing §Yrevenue§! and §Ymanpower§!.\nAlso gain the following permanent, nation-wide modifiers:"
  btc_bureaucracy_corruption: "Anti-corruption laws"
  btc_bureaucracy_corruption_desc: "A bureaucratic state is often linked with corruption. The higher in number our officials grow, the more difficult it is for our authorities to keep track of all movements and avoid shady dealings and bribes.\n\nBecause of this, we must issue nation wide clear and concise laws that contemplate in detail corruption regarding government officials, so that they will think twice before committing any crime.\n"
  btc_public_administration_idea: "Public Administration"
@@ -19,7 +26,7 @@
  btc_infrastructure_ideas: "Infrastructure Ideas"
  btc_infrastructure_ideas_bonus: "Full Infrastructure Ideas"
  infr_idea_1: "State Investments"
- infr_idea_1_desc: "Private investments can be quite fruitful, as they not only allow us to save a substantial amount of money, but they further contribute to the growth of cities. This growth, however, is not always sustainable, and thus, by taking direct action through state sponsored funds and projects, cities will be able to grow beyond their otherwise limited boundaries.\n\n§YUnlocks feature§!:\n§GPublic Funds§!: Effect of Development on Development Cost reduced by §G-33.0%§!\nAlso gain the following permanent, nation-wide modifiers:"
+ infr_idea_1_desc: "Private investments can be quite fruitful, as they not only allow us to save a substantial amount of money, but they further contribute to the growth of cities. This growth, however, is not always sustainable, and thus, by taking direct action through state sponsored funds and projects, cities will be able to grow beyond their otherwise limited boundaries.\n\n§YUnlocks feature§!:\n§GPublic Funds§!: Effect of total province Development on"
  infr_idea_4: "Urban Planning"
  infr_idea_4_desc: "A well planned city is a prosperous city. We will regulate who has building rights and where each building can be built, with designated and specialized neighbourhoods. An intelligent and efficient city design will improve land value and reduce the amount of slums.\n\nEvery province will gain the following effects:"
  infr_idea_5: "Cadastre"
@@ -27,7 +34,7 @@
  infr_idea_6: "Country Roads"
  infr_idea_6_desc: "The heart of every nation is its agriculture. From wheat to potatoes to rice, every crop and farm animal is crucial for the survival of our people. However sometimes these places are often isolated and difficult to traverse. If we are to make the most out of our countryside, we must build a wide network of roads to connect every inch of our realm.\n\n§YUnlocks feature§!:\n§GRural Roads:§! All provinces with §Gagricultural§! and §YWool§! goods with §Y8§! or less development will receive the following effects:\nLocal Production Efficiency: §G+10.0%§!\nLocal Development Cost: §G-5.0%§!\n\nThe following goods are considered §Gagricultural§!:\n§YWool§!, §YWheat§!, §YLivestock§!, §YLegumes§!, §YFruit§!, §YRice§!, §YOlives§!, §YApiculture§!, §YPotatoes§!, §YMaize§!, §YMillet§!, §YDates§!, §YAmaranth§!, and §YTeff§!.\nAlso gain the following permanent, nation-wide modifiers:"
  infr_idea_7: "Improved Healthcare"
- infr_idea_7_desc: "Hospitals are an important and elaborate institution within our realm, however they're often monitored privately or reserved exclusively for the military. By issuing a series of public works to build hospitals sponsored by the government in all major cities and expand the staff of our current hospitals, we will have a healthy and thankful society.\n\n§YUnlocks feature§!:\n§GPublic Hospitals:§! Enables a series of improved options for ill and disease related events, such as influenza or heir falls ill.\nAlso gain the following permanent, nation-wide modifiers:"
+ infr_idea_7_desc: "Hospitals are an important and elaborate institution within our realm, however they're often monitored privately or reserved exclusively for the military. By issuing a series of public works to build hospitals sponsored by the government in all major cities and expand the staff of our current hospitals, we will have a healthy and thankful society.\n\n§YUnlocks feature§!:\n§GPublic Hospitals:§! Enables a series of improved options for illness and disease related events, such as influenza.\nAlso gain the following permanent, nation-wide modifiers:"
 
  #Modifiers & misc
  btc_infrastructure_ideas_possible_buildings: "Urban Planning"
@@ -38,6 +45,8 @@
  btc_conscript_farmers_tooltip: "Up to §Y10§! owned provinces with §Gagricultural§! goods will receive §Y'Recently Conscripted Farmers'§! for §Y10 years§!, giving the following effects:\nLocal Manpower Modifier: §R-35.0%§!\nLocal Unrest: §R+2.00§!\n\nThe following goods are considered §Gagricultural§!: §YWheat§!, §YLivestock§!, §YLegumes§!, §YFruit§!, §YRice§!, §YOlives§!, §YApiculture§!, §YPotatoes§!, §YMaize§!, §YMillet§!, §YDates§!, §YAmaranth§!, and §YTeff§!."
  btc_conscript_farmers_decision_title: "Force Conscription of Farmers"
  btc_conscript_farmers_decision_desc: ""
+ edict_organised_construction:0 "Organised Construction"
+ edict_improved_organised_construction:0 "Organised Construction"
  
  #Bureaucracy edicts
  improved_edict_religious_unity:0 "Enforce Religious Unity"

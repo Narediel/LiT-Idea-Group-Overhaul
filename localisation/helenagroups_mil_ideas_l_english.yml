@@ -4,7 +4,7 @@
  btc_military_academy_idea: "Military Academy"
  btc_military_academy_idea_desc: "If we are to secure our nation an efficient, well organised national army, the first step is preparing the candidates. Investing in an official military academy will allow our candidates and cadets to learn both the basics and the advanced concepts about warfare, preparing them for what is to come and teach them what is expected from a professional soldier.\n"
  btc_war_cabinet_idea: "Military Committees"
- btc_war_cabinet_idea_desc: "War becomes a matter of state politics the very moment our own people are affected by it. As such, it is imperative that our government forms committees during times of war. Political opponents, minor nobles, ministers and senior military officers alike will be part of a decision-making body tasked with overseeing our wars.\n\n§YUnlocks feature§!:\n§GWar Cabinet:§! Reduce Military Advisor Cost by an additional §G-15.0%§! during wars\nAlso gain the following permanent, nation-wide modifiers:"
+ btc_war_cabinet_idea_desc: "War becomes a matter of state politics the very moment our own people are affected by it. As such, it is imperative that our government forms committees during times of war. Political opponents, minor nobles, ministers and senior military officers alike will be part of a decision-making body tasked with overseeing our wars.\n\n§YUnlocks feature§!:\n§GWar Cabinet:§! Reduce Military Advisor Cost by an additional §G-25.0%§! during wars\nAlso gain the following permanent, nation-wide modifiers:"
  
  #Conscription ideas
  btc_conscript_farmers_idea: "Medieval Levies"
@@ -13,31 +13,50 @@
  btc_morale_conscript_idea_desc: "Our army is usually formed by the lowest ranks of society; farmers, serfs, city commoners, lesser burghers and others. This gives our soldiers a sense of usefulness and, most importantly, the opportunity of social mobility by proving their worth in battle. With nothing to lose and a possible career to bolster, our soldiers are ready to fight for glory.\n"
  
  #Irregular/Mercenary Ideas
- btc_irregular_army_ideas: "Irregular Army Ideas"
+ btc_irregular_army_ideas: "Irregular Army Ideas §B(*)§!"
  btc_irregular_army_ideas_bonus: "Full Irregular Army Ideas"
  btc_irregular_looting_idea: "Pillaging and looting"
  btc_irregular_looting_idea_desc: "Soldiers of fortune are often raised in the harshest of environments, as such, they may grow violent or with little care for human life. This paired with the lack of discipline proper of a well trained, professional army makes our irregulars a force to be reckoned with - if you are a citizen. However may be, looting, pillaging and sacking prove useful to also fill our own coffers.\n"
  btc_irregular_veteran_mercs_idea: "A Soldier for Life"
- btc_irregular_veteran_mercs_idea_desc: "Mercenaries are often experienced combatants or former regular soldiers who decided to sell their combat experience, skill or manpower to interested parties. They might not be as sustainable as trained commoners, or as professional as our national army, but their unusual experience in combat grants them an edge in other aspects.\n"
+ btc_irregular_veteran_mercs_idea_desc: "Mercenaries are often experienced combatants or former regular soldiers who decided to sell their combat experience, skill or manpower to interested parties. They might not be as sustainable as trained commoners, or as professional as our national army, but their unusual experience in combat grants them an edge in other aspects.\n\n§YUnlocks feature§!:\n§GVeterans For Hire:§! Gain access to §Ytwo§! new mercenary companies of §YBattle-hardened Veterans§!, a more skilled company with better army composition\nAlso gain the following permanent, nation-wide modifiers:"
  btc_irregular_war_exhaustion_idea: "No Conscription for Old Men"
  btc_irregular_war_exhaustion_idea_desc: "Combat experience is not the only thing mercenaries bring to the table. A mercenary in the field also means one less of our own people risking their life. With a little bit of nice wording, our people will appreciate that the state is spending extra money on foreign people to fight for our wars.\n"
- btc_irregular_guerrilla_idea: "Irregular Warfare"
- btc_irregular_guerrilla_idea_desc: "Not having clear military plans or a solidified disciplined army can lead to catastrophe in every encounter. That is why irregulars have to come up with new and inventive ways to overcome difficulties. Guerrilla warfare and tactics are as old as time, and no one better prepared than an irregular to employ them.\n"
  btc_irregular_rehiring_idea: "Use and Throw"
  btc_irregular_rehiring_idea_desc: "It might sound heartless, but not having ties to many of our forces beyond payment means that we can also not care about their fate or aiding their relatives. When a mercenary falls, another is shipped. When a mercenary company is destroyed, another one is hired to replace them. So long as we can afford them, our troops can be easily replaced at will.\n"
+ btc_permanent_mercs_idea: "Permanent Companies"
+ btc_permanent_mercs_idea_desc: "Sometimes the role of an army doesn't end at warring other countries. Enemies are also found within our borders in the form of rebellions, disloyal subjects, heretics or worse. If we give give some extra non-monetary benefits and privileges to some mercenaries, they may be willing to stay permanently in our country and act as peace-keeping forces.\n\n§YUnlocks feature§!:\n§GPeace-keeping Companies:§! While at peace, receive an additional §G-50.0%§! Mercenary Maintenance, but the locals won't like the presence of foreign forces in our lands...\nAlso gain the following permanent, nation-wide modifiers:"
+
+ #Military Theory Ideas
+ btc_mil_theory_ideas: "Military Theory Ideas"
+ btc_mil_theory_ideas_bonus: "Full Military Theory Ideas"
+ btc_military_science_idea: "Military Science"
+ btc_military_science_idea_desc: "How effectively and efficiently militaries accomplish their operations, missions and tasks is closely related to both the methods and the equipment and weapons they use. Because of this, we must found a national institute of war for the study of military processes, institutions, and behavior, along with the study of warfare, and the theory and application of organized coercive force. This will give us an edge over our enemies on tactic and weapon development.\n"
 
  #Logistics ideas
  btc_logistic_ideas: "Military Logistics Ideas"
  btc_logistic_ideas_bonus: "Full Military Logistics Ideas"
  btc_innovative_siege_idea: "Rest for the Wicked"
  btc_innovative_siege_idea_desc: "Siege is an art of war in itself: many theories, philosophies and customs were developed for it. One of them was whether or not to allow a besieged city to surrender. Many commanders, less clever than ours, decide to loot and sack cities just to fill their own pockets, regardless of a surrender, with the consequence that other cities would then defend themselves with ever greater determination. Our commanders and soldiers are smarter, and know that if our armies have a reputation for graciously allowing surrenders, sieges will end more quickly and be less costly in lives.\n"
- btc_military_science_idea: "Military Science"
- btc_military_science_idea_desc: "How effectively and efficiently militaries accomplish their operations, missions and tasks is closely related to both the methods and the equipment and weapons they use. Because of this, we must found a national institute of war for the study of military processes, institutions, and behavior, along with the study of warfare, and the theory and application of organized coercive force. This will give us an edge over our enemies on tactic and weapon development.\n"
+ btc_irregular_guerrilla_idea: "Irregular Warfare"
+ btc_irregular_guerrilla_idea_desc: "Not having clear military plans or a solidified disciplined army can lead to catastrophe in every encounter. That is why irregulars have to come up with new and inventive ways to overcome difficulties. Guerrilla warfare and tactics are as old as time, and no one better prepared than an irregular to employ them.\n"
+
+ #Fortification ideas
+ btc_improved_ditches: "Improved Ditches"
+ btc_improved_ditches_desc: "With the widespread use of artillery many fortresses and walls that used to hold entire armies are becoming obsolete, even our current walls are very vulnerable to cannons. By sunking our walls into ditches fronted by earth slopes we can improve our wall's protection and make them resist better and longer, since they will absorb and disperse the energy of cannon fire."
  
  #Inland Sea Warfare
- btc_inland_warfare_ideas: "Inland Sea Warfare Ideas"
+ btc_inland_warfare_ideas: "Inland Sea Warfare Ideas §T(*)§!"
  btc_inland_warfare_ideas_bonus: "Full Inland Sea Warfare Ideas"
  
  #Modifiers and misc
  btc_war_cabinet_modifier: "War Cabinet"
  desc_btc_war_cabinet_modifier: "A war cabinet has been formed with the various officials, nobles and ministers of our realm to oversee and analyze the current war efforts."
+ btc_peacekeeping_companies_modifier:0 "Peace-keeping Companies"
+ desc_btc_peacekeeping_companies_modifier:0 "Mercenary Companies have been appointed to monitor unrest and disloyalty across our realm and work to maintain stability."
+ merc_good_veterans_btc:0 "Battle-hardened Veterans"
+ merc_good_second_veterans_btc:0 "Battle-hardened Veterans"
+ merc_irregular_inf_one:0 "Registered Irregulars"
+ merc_irregular_inf_two:0 "Registered Irregulars"
+ merc_irregular_inf_three:0 "Registered Irregulars"
+ merc_irregular_inf_four:0 "Registered Irregulars"
+ 
