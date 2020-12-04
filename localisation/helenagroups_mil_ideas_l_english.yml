@@ -26,6 +26,12 @@
  btc_permanent_mercs_idea: "Permanent Companies"
  btc_permanent_mercs_idea_desc: "Sometimes the role of an army doesn't end at warring other countries. Enemies are also found within our borders in the form of rebellions, disloyal subjects, heretics or worse. If we give give some extra non-monetary benefits and privileges to some mercenaries, they may be willing to stay permanently in our country and act as peace-keeping forces.\n\n§YUnlocks feature§!:\n§GPeace-keeping Companies:§! While at peace, receive an additional §G-50.0%§! Mercenary Maintenance, but the locals won't like the presence of foreign forces in our lands...\nAlso gain the following permanent, nation-wide modifiers:"
 
+ #Army Staff Ideas
+ btc_intelligence_chief_idea: "Intelligence Chiefs"
+ btc_intelligence_chief_idea_desc: "Improving our own logistics and strategy are not the only benefits of effective intelligence gathering of the battlefield. By appointing a specialized staff to oversee and analyze our intelligence on the battlefield and enemies, we will be able to also find weakness or flaws in their fortifications or their defensive and supply lines.\n\n§YUnlocks feature§!:\n§GDisruptive Reconnaisance:§! Gain §G+5.0%§! movement speed in enemy territory, as well as giving enemies §R-10.0%§! movement speed in their own territory\nAlso gain the following permanent, nation-wide modifiers:"
+ btc_chief_staff_idea: "Chiefs of Staff"
+ btc_chief_staff_idea_desc: "Like with governance, maintaining an army comes with a significant bureaucratic burden. The more our army grows, the busiest our highest ranks become as they have to pay attention to more and more generals and unit commanders misbehaving, or confirming they're behaving. By delegating some of these bureaucratic elements to Chiefs of staff, our Commanders in chief will be able to focus better on the strategic picture.\n\n§YUnlocks feature§!:\n§GChief of Staff:§! For every §Y100%§! recruited regiments, gain §Y+1%§! extra leader without upkeep\nAlso gain the following permanent, nation-wide modifiers:"
+
  #Military Theory Ideas
  btc_mil_theory_ideas: "Military Theory Ideas"
  btc_mil_theory_ideas_bonus: "Full Military Theory Ideas"
@@ -51,6 +57,8 @@
  #Modifiers and misc
  btc_war_cabinet_modifier: "War Cabinet"
  desc_btc_war_cabinet_modifier: "A war cabinet has been formed with the various officials, nobles and ministers of our realm to oversee and analyze the current war efforts."
+ btc_intelligence_staff_mod: "Disrupted Supply and Defensive Lines"
+ desc_btc_intelligence_staff_mod: "The supply and defensive lines of this zone have been compromised by a foreign agent due to superior reconnaisance."
  btc_peacekeeping_companies_modifier:0 "Peace-keeping Companies"
  desc_btc_peacekeeping_companies_modifier:0 "Mercenary Companies have been appointed to monitor unrest and disloyalty across our realm and work to maintain stability."
  merc_good_veterans_btc:0 "Battle-hardened Veterans"

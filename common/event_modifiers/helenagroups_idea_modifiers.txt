@@ -37,3 +37,8 @@ btc_influence_vassal_nation_mod = {
 	land_forcelimit	= 3
 	naval_forcelimit = 6
 }
+
+btc_intelligence_staff_mod = {
+	local_friendly_movement_speed = -0.1
+	local_hostile_movement_speed = 0.05
+}

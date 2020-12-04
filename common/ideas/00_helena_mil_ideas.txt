@@ -18,16 +18,15 @@ quality_ideas = { #Professional Army Ideas
 		infantry_power = 0.075
 		cavalry_power = 0.075
 	}
-	btc_war_cabinet_idea = {
-		mil_advisor_cost = -0.1
-		#Enables war cabinets
+	btc_quality_idea_2 = {
+		
 	}
 	btc_quality_idea_3 = {
 		
 	}
 	military_drill = {
 		land_morale = 0.05
-		drill_gain_modifier = 1
+		drill_gain_modifier = 0.5
 	}
 	btc_military_academy_idea = {
 		yearly_army_professionalism = 0.005
@@ -127,26 +126,28 @@ offensive_ideas = { #Army Staff ideas
 	category = MIL
 
 	bonus = {
-		recover_army_morale_speed = 0.05
+		
 	}
 
 	bayonet_leaders = {
 		leader_land_shock = 1
 	}
-	btc_army_staff_2 = {
-		
+	btc_intelligence_chief_idea = {
+		leader_siege = 1
 	}
 	superior_firepower = {
 		leader_land_fire = 1
 	}
 	btc_army_staff_4 = {
-		
+		recover_army_morale_speed = 0.05
 	}
-	btc_army_staff_5 = {
-		
+	btc_war_cabinet_idea = {
+		mil_advisor_cost = -0.1
+		#Enables war cabinets
 	}
-	btc_army_staff_6 = {
-		
+	btc_chief_staff_idea = {
+		leader_cost = -0.25
+		#Unlocks 1 leader slots per 125 regiments up to 3
 	}
 	btc_army_staff_7 = {
 		
@@ -162,7 +163,7 @@ defensive_ideas = {
 	category = MIL
 
 	bonus = {
-		hostile_attrition = 1
+		
 	}
 
 	garrison_conscription = {
@@ -214,6 +215,7 @@ btc_mil_theory_ideas = {
 		
 	}
 	engineer_corps = {
+		
 		artillery_bonus_vs_fort = 1
 		siege_blockade_progress = 1
 	}
@@ -258,8 +260,8 @@ btc_logistic_ideas = {
 		land_attrition = -0.1
 	}
 	btc_irregular_guerrilla_idea = {
-		land_attrition = -0.15
-		movement_speed = 0.15
+		hostile_attrition = 1
+		movement_speed = 0.1
 	}
 
 	ai_will_do = {

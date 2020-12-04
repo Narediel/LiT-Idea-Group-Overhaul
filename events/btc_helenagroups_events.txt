@@ -409,3 +409,47 @@ country_event = {
     
     option = { ai_chance = { factor = 1 } }
 }
+
+#Intelligence Chiefs event 1
+country_event = {
+    id = helenagroups_events.13
+    hidden = yes
+    
+    mean_time_to_happen = { days = 1 }
+    
+    trigger = {
+        has_idea = btc_intelligence_chief_idea
+        is_at_war = yes
+		NOT = { has_country_modifier = btc_intelligence_staff_mod }
+    }
+    
+    immediate = {
+        add_country_modifier = {
+			name = btc_intelligence_staff_mod
+			duration = -1
+			hidden = yes
+		}
+    }
+    
+    option = { ai_chance = { factor = 1 } }
+}
+
+#Intelligence Chiefs event 2
+country_event = {
+    id = helenagroups_events.14
+    hidden = yes
+    
+    mean_time_to_happen = { days = 1 }
+    
+    trigger = {
+		OR = {
+			is_at_war = no
+			every_enemy_country = { NOT = { has_idea = btc_intelligence_staff_mod } }
+		}
+		any_owned_province = { has_province_modifier = btc_intelligence_staff_mod }
+    }
+    
+    immediate = { remove_country_modifier = btc_intelligence_staff_mod }
+    
+    option = { ai_chance = { factor = 1 } }
+}

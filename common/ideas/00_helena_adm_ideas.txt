@@ -306,7 +306,8 @@ aristocracy_ideas = {
 	category = ADM
 
 	bonus = {
-		leader_siege = 1
+		
+		burghers_loyalty_modifier = -0.1
 		nobles_loyalty_modifier = 0.1
 		generals_loyalty_modifier = -0.1
 	}
